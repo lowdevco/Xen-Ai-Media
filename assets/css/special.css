@@ -1,0 +1,214 @@
+
+
+    .pricing-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 70px !important;
+    }
+
+.Package-Details{
+  margin-bottom: 50px !important;
+  margin-top:70px !important;
+}
+   
+ .card-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4); 
+  z-index: 2;
+}
+.image-overlay{
+ position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4); 
+  border: none;
+  z-index: 2;
+}
+
+.card-body {
+  z-index: 3;
+  
+}
+
+  /* ============ MONTHLY PACKAGES — REDESIGN ============ */
+  .Monthly-package-section{margin-bottom:140px !important;}
+  .monthly{
+    margin-top:0 !important;
+    margin-bottom:12px;
+    text-align:center;
+    color:#fff;
+    font-weight:700;
+    font-size:32px;
+  }
+  .monthly-sub{
+    text-align:center;
+    color:#9aa3ab;
+    max-width:520px;
+    margin:0 auto 60px;
+    font-size:15px;
+  }
+
+  .pricing-container{
+    display:grid;
+    grid-template-columns:repeat(4, minmax(240px, 1fr));
+    gap:28px;
+    margin-bottom:70px !important;
+    max-width:1200px;
+    margin-left:auto;
+    margin-right:auto;
+    align-items:stretch;
+  }
+  @media(max-width:992px){.pricing-container{grid-template-columns:repeat(2,1fr);}}
+  @media(max-width:576px){.pricing-container{grid-template-columns:1fr;}}
+
+  .month-card{
+    position:relative;
+    background:#ffffff;
+    color:#16202a;
+    border-radius:18px;
+    border:none;
+    box-shadow:0 10px 30px rgba(0,0,0,0.35);
+    text-align:center;
+    padding:0 0 28px;
+    display:flex;
+    flex-direction:column;
+    overflow:hidden;
+    transition:transform .3s ease, box-shadow .3s ease;
+  }
+  .month-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 45px rgba(0,127,185,0.28);
+  }
+
+  .month-card.featured{
+    border:2px solid #41d0f4;
+  }
+  .featured-tag{
+    position:absolute;
+    top:16px;right:-38px;
+    background:linear-gradient(90deg,#41d0f4,#007fb9);
+    color:#fff;
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:.05em;
+    text-transform:uppercase;
+    padding:6px 46px;
+    transform:rotate(40deg);
+    box-shadow:0 4px 10px rgba(0,0,0,0.25);
+  }
+
+  .Monthly-package-title{
+    background:linear-gradient(135deg,#00608d,#007fb9);
+    padding:28px 20px 40px;
+    color:#fff;
+    font-size:19px;
+    font-weight:700;
+    letter-spacing:.02em;
+    margin:0;
+    position:relative;
+  }
+
+  .month-card .icon-badge{
+    width:64px;height:64px;
+    border-radius:50%;
+    background:#ffffff;
+    display:flex;align-items:center;justify-content:center;
+    margin:-32px auto 18px;
+    box-shadow:0 8px 18px rgba(0,0,0,0.18);
+    position:relative;
+    z-index:2;
+  }
+  .month-card .icon-badge i{
+    font-size:26px;
+    background:linear-gradient(135deg,#41d0f4,#007fb9);
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+  }
+
+  .description{
+    color:#6a7580;
+    font-size:13.5px;
+    padding:0 22px;
+    margin-bottom:20px !important;
+    min-height:38px;
+  }
+
+  .month-card ul{
+    list-style:none;
+    padding:0 22px;
+    margin:0 0 22px;
+    font-size:14px;
+    text-align:left;
+  }
+  .month-card ul li{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:10px;
+    color:#2c3742;
+  }
+  .month-card ul li i{
+    color:#41d0f4;
+    font-size:13px;
+  }
+  .month-card ul li b{
+    font-weight:600;
+    color:#16202a;
+  }
+
+  .price-block{
+    margin-top:auto;
+    padding:0 22px;
+  }
+  .price-block .amount{
+    display:block;
+    font-size:26px;
+    font-weight:800;
+    color:#00608d;
+    line-height:1.1;
+  }
+  .price-block .per{
+    display:block;
+    font-size:12px;
+    color:#8892a0;
+    letter-spacing:.04em;
+    text-transform:uppercase;
+    margin-bottom:16px;
+  }
+
+  .month-card button{
+    background:linear-gradient(90deg,#007fb9,#00608d);
+    color:#ffffff;
+    border:none;
+    width:100%;
+    padding:12px;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:700;
+    font-size:14px;
+    letter-spacing:.02em;
+    transition:filter .2s, transform .2s;
+  }
+  .month-card button:hover{
+    filter:brightness(1.1);
+    transform:translateY(-1px);
+  }
+

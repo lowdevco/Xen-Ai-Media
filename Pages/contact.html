@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="images/logo/XEN-FAVICON.png" type="image/png" />
+    <title>Xen-AI Media - Contact</title>
+
+    <!-- Styles External -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+
+    <style>
+      .wave {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+      .contact-content {
+        text-align: center;
+        padding: 2rem 1rem;
+      }
+      .map-form__form__item input,
+      .map-form__form__item textarea {
+        width: 100%;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      @media (max-width: 576px) {
+        .footer__logo img {
+          width: 70% !important;
+        }
+      }
+      
+      /* Validation Styles */
+      .error {
+        color: #dc3545;
+        font-size: 0.875rem;
+        margin-top: 0.25rem;
+        display: block;
+      }
+      .map-form__form__item input.error,
+      .map-form__form__item textarea.error {
+        border-color: #dc3545;
+      }
+      .map-form__form__item input.valid,
+      .map-form__form__item textarea.valid {
+        border-color: #28a745;
+      }
+      
+      /* Alert Messages */
+      .alert-message {
+        padding: 1rem;
+        margin-bottom: 1rem;
+        border-radius: 0.25rem;
+        display: none;
+      }
+      .alert-success {
+        background-color: #d4edda;
+        border-color: #c3e6cb;
+        color: #155724;
+      }
+      .alert-error {
+        background-color: #f8d7da;
+        border-color: #f5c6cb;
+        color: #721c24;
+      }
+      
+      /* Loading Spinner */
+      .btn-loading {
+        position: relative;
+        pointer-events: none;
+      }
+      .btn-loading::after {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        top: 50%;
+        left: 50%;
+        margin-left: -8px;
+        margin-top: -8px;
+        border: 2px solid #ffffff;
+        border-radius: 50%;
+        border-top-color: transparent;
+        animation: spin 0.6s linear infinite;
+      }
+      @keyframes spin {
+        to { transform: rotate(360deg); }
+      }
+    </style>
+    
+    <!-- Google reCAPTCHA v3 -->
+    <script src="https://www.google.com/recaptcha/api.js?render=YOUR_RECAPTCHA_SITE_KEY"></script>
+  </head>
+  <body class="bp-bg-body animation-active">
+    <button class="scrollToTopBtn showBtn">
+      <i class="fa-solid fa-hand-point-up"></i>
+    </button>
+
+    <header class="header header--transparent sticky-on" data-aos="fade-down" data-aos-duration="1500">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-xl-2 col-lg-2 col-md-6 col-6">
+            <div class="header__logo">
+              <a class="header__logo__link" href="index.html">
+                <img class="xenlogo" src="images/logo/ai logoWHITE].png" alt="Logo" />
+              </a>
+            </div>
+          </div>
+          <div class="col-xl-8 col-lg-7 col-md-6 col-6">
+            <div class="header__navigation">
+              <div class="header__menu text-center">
+                <div class="main-menu">
+                  <nav class="main-menu__nav">
+                    <ul class="main-menu__list">
+                      <li class="main-menu__child"><a href="index.html">Home</a></li>
+                      <li><a href="about.html">About</a></li>
+                      <li><a href="services.html">Services</a></li>
+                      <li><a href="Pricing.html">Pricing</a></li>
+                      <li><a href="work.html">Our Works</a></li>
+                                            <li><a href="career.html">Career</a></li>
+
+                      <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="hamburger-icon text-end">
+                  <i class="fa-solid fa-bars"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-3 d-none d-lg-block">
+            <div class="header__button text-end">
+              <a href="contact.html" class="bp-btn bp-btn--white">Contact</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="mobile-overlay mobile-overlay--sidebar">
+      <div class="mobile-overlay__box">
+        <div class="mobile-overlay__header">
+          <div class="mobile-overlay__logo">
+            <img class="w-50" src="images/logo/xenlogowhite.png" alt="logo" />
+          </div>
+          <div class="mobile-overlay__close">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+        </div>
+        <div class="mobile-overlay__main-menu"></div>
+      </div>
+    </div>
+    <div class="mobile-overlay--backdrop"></div>
+
+    <section class="contact-section">
+      <div class="contact-content">
+        <h2>Contact Us</h2>
+        <p>Where AI meets creativity</p>
+      </div>
+      <div class="wave-bottom">
+        <svg class="wave wave1" viewBox="0 0 1440 150" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <path fill="#fff" d="M0,96L60,80C120,64,240,32,360,26.7C480,21,600,43,720,69.3C840,96,960,128,1080,138.7C1200,149,1320,139,1380,133.3L1440,128V160H0Z"></path>
+        </svg>
+        <svg class="wave wave2" viewBox="0 0 1440 150" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <path fill="#fff" fill-opacity="0.6" d="M0,96L60,80C120,64,240,32,360,26.7C480,21,600,43,720,69.3C840,96,960,128,1080,138.7C1200,149,1320,139,1380,133.3L1440,128V160H0Z"></path>
+        </svg>
+      </div>
+    </section>
+
+    <main id="bp-main">
+      <section class="map-form mt-5">
+        <div class="container">
+          <div class="map-form__wrapper">
+            <div class="row m-2 d-flex justify-content-center">
+              <div class="col-12 col-sm-12 col-md-8">
+                <div class="section-title mb-20">
+                  <h2 class="text-black">Get in touch!</h2>
+                </div>
+                
+                <!-- Alert Messages -->
+                <div id="form-messages"></div>
+                
+                <form id="contact-form" action="contact.php" method="POST" class="map-form__form">
+                  <div class="map-form__form__item">
+                    <input type="text" id="name" name="name" placeholder="Name" />
+                  </div>
+                  <div class="map-form__form__item">
+                    <input type="tel" id="phone" name="phone" placeholder="Phone" />
+                  </div>
+                  <div class="map-form__form__item">
+                    <input type="email" id="email" name="email" placeholder="Email" />
+                  </div>
+                  <div class="map-form__form__item">
+                    <textarea id="message" name="message" placeholder="Type your message" rows="5"></textarea>
+                  </div>
+                  <input type="hidden" id="recaptcha-token" name="recaptcha_token" />
+                  <div class="map-form__form__item">
+                    <button type="submit" class="bp-btn bp-btn-outline contactbtn text-white">Send Message</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact gsap-active pt-170 pb-40">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-sm-6 col-lg-4 mb-40">
+                  <div class="contact-content__item">
+                    <i class="bi bi-telephone-fill contacticon"></i>
+                    <p><a href="tel:9746905919">+91 9746 905 919</a></p>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 mb-40">
+                  <div class="contact-content__item">
+                    <i class="bi bi-envelope-fill contacticon"></i>
+                    <p><a href="mailto:info@xenaimedia.com">info@xenaimedia.com</a></p>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-12 col-lg-4 mb-40">
+                  <div class="contact-content__item">
+                    <i class="bi bi-geo-alt-fill contacticon"></i>
+                    <p>Main road, Thannikode Complex, Sultan Bathery, Kerala 673592</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="xevmap d-flex justify-content-center">
+            <div class="map-form__map mb-5 mt-5 mb-lg-0 w-100">
+              <div class="ratio ratio-16x9">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d976.8598651947951!2d76.2560201!3d11.6632357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba609775d284481%3A0xad3d2a2081b3149d!2sXeventure%20IT%20Solutions!5e0!3m2!1sen!2sin!4v1751428680837!5m2!1sen!2sin" allowfullscreen loading="lazy"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Area Start -->
+    <footer class="mt-85">
+      <section class="footer black-bg pt-115">
+        <div class="footer__top pb-60">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-4 col-lg-3 col-md-12">
+                <div class="footer__logo text-lg-start text-md-end">
+                  <a href="index.html">
+                    <img class="w-50 img-fluid" src="images/logo/ai logoWHITE].png" alt="FooterLogo" />
+                  </a>
+                </div>
+              </div>
+              <div class="col-xl-8 col-lg-9">
+                <div class="footer-right">
+                  <div class="mb-10">
+                    <p class="footer__text mb-0">Want to talk us?</p>
+                   <a
+                    class="footer__email"
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=info@xenaimedia.com&su=Let's+Talk+About+AI+Media&body=Hi+Xen+AI+Media%2C%0D%0A"
+                    target="_blank"
+                  >
+                   info@xenaimedia.com
+                  </a>
+                  </div>
+                  <div class="footer-widgets">
+                    <div class="row">
+                      <div class="col-lg-3 col-md-6">
+                        <div class="footer-menu mb-30">
+                          <h3 class="footer-menu__title mb-20">Menu</h3>
+                          <ul class="footer-menu__list mb-0">
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="about.html">ABOUT</a></li>
+                            <li><a href="service.html">SERVICES</a></li>
+                            <li><a href="Pricing.html">PRICING</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6">
+                        <div class="footer-menu mb-30">
+                          <h3 class="footer-menu__title mb-20">Resources</h3>
+                          <ul class="footer-menu__list mb-0">
+                            <li><a href="work.html">WORKS</a></li>
+                            <li><a href="gallery.html">GALLERY</a></li>
+                                                        <li><a href="career.html">CAREER</a></li>
+
+                            <li><a href="gallery.html">AI STORY TELLING</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6">
+                        <div class="footer-menu mb-30">
+                          <h3 class="footer-menu__title mb-20">Contact</h3>
+                          <ul class="footer-menu__list mb-0">
+                            <li><a href="tel:9746905919">+91 974 6905 919</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6">
+                        <div class="footer-menu mb-30">
+                          <h3 class="footer-menu__title mb-20">Social</h3>
+                          <ul class="footer-menu__list mb-0">
+                            <li><a href="https://www.instagram.com/xenaimedia?igsh=Mm5qanNteDRmYmp5" target="_blank">INSTAGRAM</a></li>
+                            <li><a href="https://www.facebook.com/share/1AtoVyVXjU/" target="_blank">FACEBOOK</a></li>
+                            <li><a href="https://youtube.com/@xenaimedia?si=Ad1mdkcQD3n7LWem" target="_blank">YOUTUBE</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="footer__bottom--inner pt-15">
+                  <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                      <p class="footer__copyright mb-15">
+                        ©2025 Xen AI Media All Right Reserved. Developed by <a class="text-white" href="https://xeventure.com/">Xeventure</a>
+                      </p>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                      <div class="footer__links mb-15">
+                        <span><a href="about.html">PRIVACY</a></span>
+                        <span> - </span>
+                        <span><a href="about.html">TERMS</a></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <!-- jQuery and jQuery Validate -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/additional-methods.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/magnific-popup.min.js"></script>
+    <script src="app.js"></script>
+
+  </body>
+</html>
