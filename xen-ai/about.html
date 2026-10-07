@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XEN-AI - About Us</title>
+    <link rel="icon" href="data:,">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+            --font-sans: "Montserrat", sans-serif;
+            --color-brand-dark: #0a0a0a;
+            --color-brand-light: #ffffff;
+            --color-brand-gray: #1a1a1a;
+            --color-brand-border: #2a2a2a;
+        }
+    </style>
+    
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body class="bg-brand-dark text-brand-light font-sans antialiased overflow-x-hidden selection:bg-brand-light selection:text-brand-dark">
+
+    <!-- Navbar -->
+    <header class="fixed top-0 left-0 w-full z-50 px-6 py-4 flex justify-between items-center mix-blend-difference">
+        <a href="index.html" class="text-lg font-semibold uppercase tracking-widest flex items-center gap-2 z-[60]">
+            <img src="assets/img/image(23).png" alt="Logo" class="w-6 h-6 object-contain invert opacity-80">
+            XEN-AI
+        </a>
+        <nav class="hidden md:flex items-center gap-8 text-[10px] font-semibold uppercase tracking-widest">
+            <a href="index.html" class="flex gap-2 items-center hover:opacity-50 transition-opacity"><span>Home</span><span class="text-[9px] text-gray-500">01</span></a>
+            <a href="portfolio.html" class="flex gap-2 items-center hover:opacity-50 transition-opacity"><span>Portfolio</span><span class="text-[9px] text-gray-500">02</span></a>
+            <a href="about.html" class="flex gap-2 items-center hover:opacity-50 transition-opacity"><span>About</span><span class="text-[9px] text-gray-500">03</span></a>
+            <a href="services.html" class="flex gap-2 items-center hover:opacity-50 transition-opacity"><span>Services</span><span class="text-[9px] text-gray-500">04</span></a>
+            <a href="contact.html" class="flex gap-2 items-center hover:opacity-50 transition-opacity"><span>Contact</span><span class="text-[9px] text-gray-500">05</span></a>
+        </nav>
+        <div class="flex items-center gap-4 z-[60]">
+            <a href="contact.html" class="hidden lg:flex items-center gap-3 bg-brand-light text-brand-dark px-6 py-2.5 rounded-full hover:bg-gray-200 transition-colors">
+                <span class="text-[10px] font-semibold uppercase tracking-wider">Contact</span>
+            </a>
+            <button id="mobile-menu-btn" class="md:hidden flex flex-col justify-center items-center gap-[6px] w-10 h-10 z-[60] focus:outline-none">
+                <span class="w-6 h-[1px] bg-brand-light transition-all duration-300"></span>
+                <span class="w-6 h-[1px] bg-brand-light transition-all duration-300"></span>
+            </button>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu-overlay" class="absolute top-[100%] right-6 mt-4 w-[240px] bg-[#121212] border border-[#2a2a2a] rounded-2xl flex flex-col items-center gap-6 py-8 opacity-0 pointer-events-none transition-all duration-300 z-50 shadow-2xl translate-y-[-10px]">
+            <a href="index.html" class="text-[11px] font-semibold uppercase tracking-widest hover:text-gray-400 transition-colors">Home</a>
+            <a href="portfolio.html" class="text-[11px] font-semibold uppercase tracking-widest hover:text-gray-400 transition-colors">Portfolio</a>
+            <a href="about.html" class="text-[11px] font-semibold uppercase tracking-widest hover:text-gray-400 transition-colors">About</a>
+            <a href="services.html" class="text-[11px] font-semibold uppercase tracking-widest hover:text-gray-400 transition-colors">Services</a>
+            <a href="contact.html" class="text-[10px] font-semibold uppercase tracking-widest text-brand-dark bg-brand-light px-6 py-2.5 rounded-full hover:bg-gray-300 transition-colors mt-2">Contact</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="smooth-wrapper">
+        <div id="smooth-content">
+            
+            <!-- Hero Section -->
+            <section class="w-full pt-32 pb-12 md:pt-40 md:pb-20 px-6 bg-brand-dark">
+                <div class="max-w-7xl mx-auto flex flex-col gap-12">
+                    <div class="flex justify-between items-start text-[10px] font-semibold uppercase tracking-widest text-gray-500 fade-up">
+                        <span>We Are Here</span><span>(Our Studio)</span><span>About</span>
+                    </div>
+                    <h1 class="break-words text-2xl sm:text-3xl md:text-5xl break-words lg:text-7xl font-medium tracking-tight leading-[1.1] max-w-5xl text-reveal">
+                        One dedicated creative collective focused on your continuous stream of projects.
+                    </h1>
+                </div>
+            </section>
+
+            <!-- Image Break -->
+            <section class="w-full px-6 py-8 fade-up">
+                <div class="max-w-7xl mx-auto h-[60vh] md:h-[80vh] overflow-hidden rounded-lg relative">
+                    <img src="assets/img/image(48).jpeg" alt="Studio" class="w-full h-full object-cover" data-speed="0.8">
+                </div>
+            </section>
+
+            <!-- Process Section -->
+            <section class="w-full px-6 py-16 md:py-24 bg-brand-dark border-t border-brand-border">
+                <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12 md:gap-16 lg:gap-24 relative">
+                    
+                    <!-- Left Side: Content -->
+                    <div class="lg:w-1/2 flex flex-col gap-16">
+                        <div class="flex flex-col gap-8 fade-up">
+                            <div class="flex gap-4 text-[10px] font-semibold uppercase tracking-widest text-gray-500">
+                                <span>(01)</span><span>(Process)</span>
+                            </div>
+                            <h2 class="break-words text-3xl font-medium leading-tight text-brand-light">
+                                Design-driven expression blends structured clarity and modern visual systems with Swiss digital ideas.
+                            </h2>
+                        </div>
+
+                        <div class="flex flex-col gap-16">
+                            <!-- Step 001 -->
+                            <div class="flex flex-col gap-6 border-b border-brand-border pb-12 fade-up">
+                                <span class="text-4xl font-light text-gray-500">001</span>
+                                <div class="flex flex-col gap-4">
+                                    <h3 class="break-words text-2xl font-semibold uppercase tracking-tight">Research</h3>
+                                    <p class="text-gray-400 font-light leading-relaxed">
+                                        Exploring insights through structured analysis and clear intention. We uncover patterns and direction, creating a grounded foundation that shapes purposeful design decisions.
+                                    </p>
+                                    <div class="mt-4 flex flex-col gap-2 text-sm font-medium uppercase tracking-widest text-brand-light">
+                                        <span class="text-[10px] text-gray-500 mb-2">What's included</span>
+                                        <span>Market discovery & visual mapping</span>
+                                        <span>Brand positioning review</span>
+                                        <span>Dedicated creative strategy</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Step 002 -->
+                            <div class="flex flex-col gap-6 border-b border-brand-border pb-12 fade-up">
+                                <span class="text-4xl font-light text-gray-500">002</span>
+                                <div class="flex flex-col gap-4">
+                                    <h3 class="break-words text-2xl font-semibold uppercase tracking-tight">Experiment</h3>
+                                    <p class="text-gray-400 font-light leading-relaxed">
+                                        Translating ideas into visual concepts with clarity, balance, and exploration. We move beyond predictable form, crafting variations that reveal new creative possibilities.
+                                    </p>
+                                    <div class="mt-4 flex flex-col gap-2 text-sm font-medium uppercase tracking-widest text-brand-light">
+                                        <span class="text-[10px] text-gray-500 mb-2">What's included</span>
+                                        <span>Concept sketches & directions</span>
+                                        <span>Visual style development</span>
+                                        <span>Interactive prototyping</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Step 003 -->
+                            <div class="flex flex-col gap-6 fade-up">
+                                <span class="text-4xl font-light text-gray-500">003</span>
+                                <div class="flex flex-col gap-4">
+                                    <h3 class="break-words text-2xl font-semibold uppercase tracking-tight">Refinement</h3>
+                                    <p class="text-gray-400 font-light leading-relaxed">
+                                        Polishing every detail with precision and structure. We refine layout, tone, and expression, delivering a cohesive system shaped for clarity and long-term impact.
+                                    </p>
+                                    <div class="mt-4 flex flex-col gap-2 text-sm font-medium uppercase tracking-widest text-brand-light">
+                                        <span class="text-[10px] text-gray-500 mb-2">What's included</span>
+                                        <span>Final design adjustments</span>
+                                        <span>System-wide consistency check</span>
+                                        <span>Production handover</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Side: Sticky Image -->
+                    <div class="lg:w-1/2 relative hidden lg:block">
+                        <div class="sticky top-32 w-full aspect-[4/5] overflow-hidden rounded-lg fade-up">
+                            <img src="assets/img/image(40).jpg" alt="Creative Process" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Capabilities Section -->
+            <section class="w-full px-6 py-16 md:py-24 bg-brand-dark border-t border-brand-border">
+                <div class="max-w-7xl mx-auto flex flex-col gap-16">
+                    <div class="flex justify-between items-start text-[10px] font-semibold uppercase tracking-widest text-gray-500 fade-up">
+                        <span>(02)</span><span>(Capabilities)</span><span>&copy; 2025</span>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                        
+                        <!-- Capability 1 -->
+                        <div class="flex flex-col gap-4 border-t border-brand-border pt-6 fade-up">
+                            <h3 class="break-words text-2xl font-medium uppercase tracking-tight">Strategy</h3>
+                            <p class="text-gray-400 font-light leading-relaxed mt-2">
+                                We lay the groundwork for digital success through comprehensive brand positioning, market research, and tone of voice development.
+                            </p>
+                        </div>
+
+                        <!-- Capability 2 -->
+                        <div class="flex flex-col gap-4 border-t border-brand-border pt-6 fade-up">
+                            <h3 class="break-words text-2xl font-medium uppercase tracking-tight">Design</h3>
+                            <p class="text-gray-400 font-light leading-relaxed mt-2">
+                                Crafting immersive experiences through UI/UX design, precise art direction, 3D visuals, and elegant typography systems.
+                            </p>
+                        </div>
+
+                        <!-- Capability 3 -->
+                        <div class="flex flex-col gap-4 border-t border-brand-border pt-6 fade-up">
+                            <h3 class="break-words text-2xl font-medium uppercase tracking-tight">Development</h3>
+                            <p class="text-gray-400 font-light leading-relaxed mt-2">
+                                Bringing designs to life with robust frontend engineering, WebGL interactions, creative coding, and seamless CMS integration.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Stats & Awards (Split Section) -->
+            <section class="w-full px-6 py-16 md:py-24 bg-brand-dark border-t border-brand-border">
+                <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24">
+                    
+                    <!-- Stats -->
+                    <div class="flex flex-col gap-12">
+                        <div class="flex gap-4 text-[10px] font-semibold uppercase tracking-widest text-gray-500 fade-up">
+                            <span>(03)</span><span>(Impact & Stats)</span>
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 md:gap-12 fade-up">
+                            <div class="flex flex-col gap-2">
+                                <h4 class="text-5xl font-medium tracking-tight">2.06M</h4>
+                                <span class="text-[10px] font-semibold uppercase tracking-widest text-gray-500">Global Impressions</span>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <h4 class="text-5xl font-medium tracking-tight">160K</h4>
+                                <span class="text-[10px] font-semibold uppercase tracking-widest text-gray-500">Community Reach</span>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <h4 class="text-5xl font-medium tracking-tight">750+</h4>
+                                <span class="text-[10px] font-semibold uppercase tracking-widest text-gray-500">Creative Hours Logged</span>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <h4 class="text-5xl font-medium tracking-tight">257+</h4>
+                                <span class="text-[10px] font-semibold uppercase tracking-widest text-gray-500">Projects Completed</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Select Clients -->
+                    <div class="flex flex-col gap-12">
+                        <div class="flex gap-4 text-[10px] font-semibold uppercase tracking-widest text-gray-500 fade-up">
+                            <span>(04)</span><span>(Select Clients)</span>
+                        </div>
+                        <div class="flex flex-col border-t border-brand-border fade-up">
+                            
+                            <div class="flex justify-between items-center py-6 border-b border-brand-border group hover:pl-4 transition-all duration-300">
+                                <span class="text-xl font-medium uppercase tracking-tight">Nike Studios</span>
+                                <span class="text-[10px] font-semibold uppercase tracking-widest text-gray-500">2025</span>
+                            </div>
+
+                            <div class="flex justify-between items-center py-6 border-b border-brand-border group hover:pl-4 transition-all duration-300">
+                                <span class="text-xl font-medium uppercase tracking-tight">Lousiana KD6</span>
+                                <span class="text-[10px] font-semibold uppercase tracking-widest text-gray-500">2024</span>
+                            </div>
+
+                            <div class="flex justify-between items-center py-6 border-b border-brand-border group hover:pl-4 transition-all duration-300">
+                                <span class="text-xl font-medium uppercase tracking-tight">Vellfire</span>
+                                <span class="text-[10px] font-semibold uppercase tracking-widest text-gray-500">2024</span>
+                            </div>
+
+                            <div class="flex justify-between items-center py-6 border-b border-brand-border group hover:pl-4 transition-all duration-300">
+                                <span class="text-xl font-medium uppercase tracking-tight">Fuel Design</span>
+                                <span class="text-[10px] font-semibold uppercase tracking-widest text-gray-500">2023</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Infinite Marquee -->
+            <section class="w-full py-8 border-t border-b border-brand-border overflow-hidden bg-brand-dark flex items-center">
+                <div class="marquee-content flex gap-8 whitespace-nowrap text-2xl sm:text-3xl md:text-5xl break-words font-medium uppercase tracking-tight text-brand-light opacity-90">
+                    <span>We Are Faster, Better And Cheaper</span>
+                    <span class="text-brand-dark" style="-webkit-text-stroke: 1px white;">*</span>
+                    <span>Contact Now</span>
+                    <span class="text-brand-dark" style="-webkit-text-stroke: 1px white;">*</span>
+                    <span>We Are Faster, Better And Cheaper</span>
+                    <span class="text-brand-dark" style="-webkit-text-stroke: 1px white;">*</span>
+                    <span>Contact Now</span>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full bg-brand-light text-brand-dark px-6 py-12 md:py-16 md:py-24 mt-20">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-end gap-12">
+            <div class="flex flex-col gap-6">
+                <h2 class="break-words text-2xl sm:text-3xl md:text-5xl break-words font-medium tracking-tight">Let's work together</h2>
+                <a href="mailto:contact@xen-ai.com" class="text-lg md:text-xl hover:underline underline-offset-8 font-medium">contact@xen-ai.com</a>
+                <a href="contact.html" class="mt-4 inline-flex items-center gap-2 border border-brand-dark px-6 py-3 rounded-full hover:bg-brand-dark hover:text-brand-light transition-colors w-max font-semibold uppercase text-[10px] tracking-widest">
+                    Contact Now
+                </a>
+            </div>
+            <div class="flex flex-col items-start md:items-end gap-12">
+                <nav class="flex flex-wrap gap-6 text-[10px] font-semibold uppercase tracking-widest">
+                    <a href="index.html" class="hover:opacity-50 transition-opacity">Home <span class="text-gray-400 ml-1">01</span></a>
+                    <a href="portfolio.html" class="hover:opacity-50 transition-opacity">Portfolio <span class="text-gray-400 ml-1">02</span></a>
+                    <a href="about.html" class="hover:opacity-50 transition-opacity">About <span class="text-gray-400 ml-1">03</span></a>
+                    <a href="services.html" class="hover:opacity-50 transition-opacity">Services <span class="text-gray-400 ml-1">04</span></a>
+                    <a href="contact.html" class="hover:opacity-50 transition-opacity">Contact <span class="text-gray-400 ml-1">05</span></a>
+                </nav>
+                <div class="flex items-center gap-8 text-gray-500 text-[10px] font-semibold uppercase tracking-widest">
+                    <p>&copy; 2025 XEN-AI</p>
+                    <p>19'</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/about.js"></script>
+</body>
+</html>

@@ -1,0 +1,820 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XEN-AI - Premium Agency</title>
+    <link rel="icon" href="data:," />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --font-sans: "Montserrat", sans-serif;
+        --color-brand-dark: #0a0a0a;
+        --color-brand-light: #ffffff;
+        --color-brand-gray: #1a1a1a;
+        --color-brand-border: #2a2a2a;
+      }
+    </style>
+
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/index.css" />
+  </head>
+  <body
+    class="bg-brand-dark text-brand-light font-sans antialiased overflow-x-hidden selection:bg-brand-light selection:text-brand-dark"
+  >
+    <!-- Navbar -->
+    <header
+      class="fixed top-0 left-0 w-full z-50 px-6 py-4 flex justify-between items-center mix-blend-difference"
+    >
+      <a
+        href="index.html"
+        class="text-lg font-semibold uppercase tracking-widest flex items-center gap-2 z-[60]"
+      >
+        <img
+          src="assets/img/image(23).png"
+          alt="Logo"
+          class="w-6 h-6 object-contain invert opacity-80"
+        />
+        XEN-AI
+      </a>
+      <nav
+        class="hidden md:flex items-center gap-8 text-[10px] font-semibold uppercase tracking-widest"
+      >
+        <a
+          href="index.html"
+          class="flex gap-2 items-center hover:opacity-50 transition-opacity"
+          ><span>Home</span><span class="text-[9px] text-gray-500">01</span></a
+        >
+        <a
+          href="portfolio.html"
+          class="flex gap-2 items-center hover:opacity-50 transition-opacity"
+          ><span>Portfolio</span
+          ><span class="text-[9px] text-gray-500">02</span></a
+        >
+        <a
+          href="about.html"
+          class="flex gap-2 items-center hover:opacity-50 transition-opacity"
+          ><span>About</span><span class="text-[9px] text-gray-500">03</span></a
+        >
+        <a
+          href="services.html"
+          class="flex gap-2 items-center hover:opacity-50 transition-opacity"
+          ><span>Services</span
+          ><span class="text-[9px] text-gray-500">04</span></a
+        >
+        <a
+          href="contact.html"
+          class="flex gap-2 items-center hover:opacity-50 transition-opacity"
+          ><span>Contact</span
+          ><span class="text-[9px] text-gray-500">05</span></a
+        >
+      </nav>
+      <div class="flex items-center gap-4 z-[60]">
+        <a
+          href="contact.html"
+          class="hidden lg:flex items-center gap-3 bg-brand-light text-brand-dark px-6 py-2.5 rounded-full hover:bg-gray-200 transition-colors"
+        >
+          <span class="text-[10px] font-semibold uppercase tracking-wider"
+            >Contact</span
+          >
+        </a>
+        <button
+          id="mobile-menu-btn"
+          class="md:hidden flex flex-col justify-center items-center gap-[6px] w-10 h-10 z-[60] focus:outline-none"
+        >
+          <span
+            class="w-6 h-[1px] bg-brand-light transition-all duration-300"
+          ></span>
+          <span
+            class="w-6 h-[1px] bg-brand-light transition-all duration-300"
+          ></span>
+        </button>
+      </div>
+
+      <!-- Mobile Dropdown Menu -->
+      <div
+        id="mobile-menu-overlay"
+        class="absolute top-[100%] right-6 mt-4 w-[240px] bg-[#121212] border border-[#2a2a2a] rounded-2xl flex flex-col items-center gap-6 py-8 opacity-0 pointer-events-none transition-all duration-300 z-50 shadow-2xl translate-y-[-10px]"
+      >
+        <a
+          href="index.html"
+          class="text-[11px] font-semibold uppercase tracking-widest hover:text-gray-400 transition-colors"
+          >Home</a
+        >
+        <a
+          href="portfolio.html"
+          class="text-[11px] font-semibold uppercase tracking-widest hover:text-gray-400 transition-colors"
+          >Portfolio</a
+        >
+        <a
+          href="about.html"
+          class="text-[11px] font-semibold uppercase tracking-widest hover:text-gray-400 transition-colors"
+          >About</a
+        >
+        <a
+          href="services.html"
+          class="text-[11px] font-semibold uppercase tracking-widest hover:text-gray-400 transition-colors"
+          >Services</a
+        >
+        <a
+          href="contact.html"
+          class="text-[10px] font-semibold uppercase tracking-widest text-brand-dark bg-brand-light px-6 py-2.5 rounded-full hover:bg-gray-300 transition-colors mt-2"
+          >Contact</a
+        >
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="smooth-wrapper">
+      <div id="smooth-content">
+        <!-- 01 Hero Section -->
+        <section
+          class="relative w-full h-screen flex flex-col justify-center items-center overflow-hidden"
+        >
+          <div
+            class="absolute inset-0 z-0 w-full h-[120%] hero-bg-container top-[-10%]"
+          >
+            <div class="absolute inset-0 bg-black/60 z-10"></div>
+            <img
+              src="assets/img/image(20).png"
+              alt="Hero Background"
+              class="w-full h-full object-cover parallax-bg"
+            />
+          </div>
+
+          <div
+            class="z-10 max-w-5xl mx-auto px-6 text-center flex flex-col items-center mt-12 hero-content"
+          >
+            <h1
+              class="break-words text-2xl sm:text-3xl md:text-5xl break-words lg:text-7xl font-medium uppercase tracking-tight leading-[1.1] text-reveal"
+            >
+              Pick a plan, submit a job request, and your project will kickoff
+              within 24 hours.
+            </h1>
+
+            <a
+              href="portfolio.html"
+              class="mt-12 flex items-center gap-4 border border-white/30 backdrop-blur-md px-8 py-3 rounded-full hover:bg-white hover:text-black transition-all duration-500 group fade-up"
+            >
+              <span class="font-semibold uppercase tracking-widest text-xs"
+                >Explore Now</span
+              >
+              <div
+                class="w-1.5 h-1.5 bg-white rounded-full group-hover:bg-black transition-colors"
+              ></div>
+            </a>
+          </div>
+
+          <div
+            class="absolute bottom-6 left-6 right-6 flex justify-between items-end text-[10px] font-semibold uppercase tracking-widest text-gray-400 z-10 hidden md:flex fade-up"
+          >
+            <div class="flex flex-col gap-1">
+              <span>01/</span><span>Strategy</span>
+            </div>
+            <div class="flex flex-col gap-1 text-center">
+              <span>Videography</span>
+            </div>
+            <div class="flex flex-col gap-1 text-right">
+              <span>Branding</span><span>&copy; 2025 | 19'</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- 02 About Us Section -->
+        <section class="w-full px-6 py-16 md:py-24 bg-brand-dark">
+          <div class="max-w-7xl mx-auto">
+            <div
+              class="flex justify-between items-start text-[10px] font-semibold uppercase tracking-widest text-gray-500 mb-16 fade-up"
+            >
+              <span>(01)</span><span>(About Us)</span><span>&copy; 2025</span>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+              <div class="lg:col-span-7 flex flex-col gap-12">
+                <h2
+                  class="break-words text-2xl md:text-3xl lg:text-4xl font-medium leading-[1.3] tracking-tight text-reveal"
+                >
+                  Design-forward impressive agency crafting bold visuals,
+                  structured layouts, and high-impact digital experiences
+                  inspired by modern aesthetics.
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 fade-up">
+                  <div>
+                    <p
+                      class="text-[10px] font-semibold uppercase tracking-widest text-gray-500 mb-4"
+                    >
+                      (Pre)
+                    </p>
+                    <p class="text-gray-400 text-sm leading-relaxed font-light">
+                      Igniting ideas with precision and intentional design.
+                      Xen-AI transforms raw creativity into structured visual
+                      systems.
+                    </p>
+                  </div>
+                  <div>
+                    <p
+                      class="text-[10px] font-semibold uppercase tracking-widest text-gray-500 mb-4"
+                    >
+                      (+Post)
+                    </p>
+                    <p class="text-gray-400 text-sm leading-relaxed font-light">
+                      Driven by bold aesthetics and functional simplicity.
+                      Xen-AI blends modern form with purposeful detail.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="lg:col-span-5 relative h-[500px] w-full overflow-hidden rounded-lg image-reveal-container"
+              >
+                <img
+                  src="assets/img/image(27).png"
+                  alt="About Us"
+                  class="absolute inset-0 w-full h-[120%] object-cover parallax-img top-[-10%] opacity-80"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 03 Services List (Hover Image Reveal) - RESTORED -->
+        <section
+          class="w-full px-6 py-20 md:py-32 border-t border-brand-border bg-brand-dark relative"
+          id="services"
+        >
+          <!-- Floating Hover Image Container -->
+          <div
+            class="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] h-[450px] pointer-events-none opacity-0 z-0 overflow-hidden rounded-xl hidden lg:block"
+            id="hover-img-container"
+          >
+            <img
+              src=""
+              alt=""
+              class="w-full h-full object-cover"
+              id="hover-img"
+            />
+          </div>
+
+          <div
+            class="max-w-7xl mx-auto flex flex-col gap-0 relative z-10 mix-blend-difference"
+          >
+            <div
+              class="flex justify-between items-start text-[10px] font-semibold uppercase tracking-widest text-gray-500 mb-16 fade-up"
+            >
+              <span>(02)</span><span>(Services)</span><span>&copy; 2025</span>
+            </div>
+
+            <div
+              class="service-item group border-b border-brand-border py-12 flex flex-col md:flex-row justify-between items-start md:items-center gap-8 cursor-pointer transition-colors"
+              data-img="assets/img/image(39).png"
+            >
+              <div class="flex gap-8 md:gap-16 items-center w-full md:w-1/2">
+                <span class="text-xs font-semibold text-gray-500">01</span>
+                <h3
+                  class="break-words text-4xl md:text-6xl font-medium uppercase tracking-tight group-hover:translate-x-4 transition-transform duration-500"
+                >
+                  Art Direction
+                </h3>
+              </div>
+              <div class="w-full md:w-1/2 flex flex-col gap-2">
+                <h4 class="text-xs font-semibold uppercase tracking-widest">
+                  Creative Oversight
+                </h4>
+                <p
+                  class="text-gray-400 text-sm leading-relaxed font-light max-w-sm"
+                >
+                  Guiding visual identity through clarity and intentional
+                  design. We shape cohesive narratives that elevate brands.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="service-item group border-b border-brand-border py-12 flex flex-col md:flex-row justify-between items-start md:items-center gap-8 cursor-pointer transition-colors"
+              data-img="assets/img/image(40).jpg"
+            >
+              <div class="flex gap-8 md:gap-16 items-center w-full md:w-1/2">
+                <span class="text-xs font-semibold text-gray-500">02</span>
+                <h3
+                  class="break-words text-4xl md:text-6xl font-medium uppercase tracking-tight group-hover:translate-x-4 transition-transform duration-500"
+                >
+                  AI Video
+                </h3>
+              </div>
+              <div class="w-full md:w-1/2 flex flex-col gap-2">
+                <h4 class="text-xs font-semibold uppercase tracking-widest">
+                  AI Generation
+                </h4>
+                <p
+                  class="text-gray-400 text-sm leading-relaxed font-light max-w-sm"
+                >
+                  Crafting dynamic visual narratives with advanced AI tools. We
+                  generate videos, avatars, and assets that feel precise and
+                  futuristic.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="service-item group border-b border-brand-border py-12 flex flex-col md:flex-row justify-between items-start md:items-center gap-8 cursor-pointer transition-colors"
+              data-img="assets/img/image(4).png"
+            >
+              <div class="flex gap-8 md:gap-16 items-center w-full md:w-1/2">
+                <span class="text-xs font-semibold text-gray-500">03</span>
+                <h3
+                  class="break-words text-4xl md:text-6xl font-medium uppercase tracking-tight group-hover:translate-x-4 transition-transform duration-500"
+                >
+                  Strategy
+                </h3>
+              </div>
+              <div class="w-full md:w-1/2 flex flex-col gap-2">
+                <h4 class="text-xs font-semibold uppercase tracking-widest">
+                  Concept Frameworks
+                </h4>
+                <p
+                  class="text-gray-400 text-sm leading-relaxed font-light max-w-sm"
+                >
+                  Structuring ideas with insight, direction, and clarity. We
+                  build thoughtful frameworks that define positioning.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 04 Scroll Stack Portfolio Section -->
+        <section
+          class="w-full px-6 py-20 md:py-32 border-t border-brand-border bg-brand-light text-brand-dark relative"
+          id="scroll-stack-section"
+        >
+          <div
+            class="max-w-[1400px] mx-auto flex flex-col lg:flex-row items-start justify-between relative gap-12"
+          >
+            <div
+              class="w-full lg:w-1/4 lg:sticky lg:top-1/3 z-20 pb-8 lg:pb-0 fade-up"
+            >
+              <h2
+                class="break-words text-5xl lg:text-7xl font-medium tracking-tight"
+              >
+                FX-25'
+              </h2>
+              <a
+                href="#"
+                class="mt-6 border-b border-brand-dark pb-1 inline-block text-[10px] font-semibold uppercase tracking-widest hover:opacity-50 transition-opacity"
+                >Join Us Now</a
+              >
+            </div>
+
+            <div
+              class="w-full lg:w-1/2 flex flex-col relative z-10"
+              id="cards-container"
+            >
+              <div
+                class="stack-card sticky top-24 w-full h-[50vh] md:h-[600px] rounded-xl overflow-hidden shadow-2xl flex flex-col items-center justify-center bg-white mb-24 md:mb-32"
+              >
+                <div class="absolute inset-0 z-0 overflow-hidden">
+                  <img
+                    src="assets/img/image(4).png"
+                    class="w-full h-full object-cover blur-2xl scale-110 opacity-60"
+                  />
+                </div>
+                <img
+                  src="assets/img/image(4).png"
+                  class="z-10 w-3/4 h-[60%] md:h-3/4 object-cover rounded-md shadow-2xl"
+                />
+                <div
+                  class="absolute bottom-6 left-6 right-6 flex justify-between text-[10px] font-semibold uppercase tracking-widest z-20 text-brand-dark mix-blend-color-burn"
+                >
+                  <span>(01)</span
+                  ><span class="text-center leading-relaxed"
+                    >Dunwill Lamson<br />AI Generation</span
+                  ><span>&copy; 2024</span>
+                </div>
+              </div>
+
+              <div
+                class="stack-card sticky top-32 w-full h-[50vh] md:h-[600px] rounded-xl overflow-hidden shadow-2xl flex flex-col items-center justify-center bg-white mb-24 md:mb-32"
+              >
+                <div class="absolute inset-0 z-0 overflow-hidden">
+                  <img
+                    src="assets/img/image(39).png"
+                    class="w-full h-full object-cover blur-2xl scale-110 opacity-60"
+                  />
+                </div>
+                <img
+                  src="assets/img/image(39).png"
+                  class="z-10 w-3/4 h-[60%] md:h-3/4 object-cover rounded-md shadow-2xl"
+                />
+                <div
+                  class="absolute bottom-6 left-6 right-6 flex justify-between text-[10px] font-semibold uppercase tracking-widest z-20 text-brand-dark mix-blend-color-burn"
+                >
+                  <span>(02)</span
+                  ><span class="text-center leading-relaxed"
+                    >Velocity Becomes<br />Art Direction</span
+                  ><span>&copy; 2024</span>
+                </div>
+              </div>
+
+              <div
+                class="stack-card sticky top-40 w-full h-[50vh] md:h-[600px] rounded-xl overflow-hidden shadow-2xl flex flex-col items-center justify-center bg-white mb-12"
+              >
+                <div class="absolute inset-0 z-0 overflow-hidden">
+                  <img
+                    src="assets/img/image(40).jpg"
+                    class="w-full h-full object-cover blur-2xl scale-110 opacity-60"
+                  />
+                </div>
+                <img
+                  src="assets/img/image(40).jpg"
+                  class="z-10 w-3/4 h-[60%] md:h-3/4 object-cover rounded-md shadow-2xl"
+                />
+                <div
+                  class="absolute bottom-6 left-6 right-6 flex justify-between text-[10px] font-semibold uppercase tracking-widest z-20 text-brand-dark mix-blend-color-burn"
+                >
+                  <span>(03)</span
+                  ><span class="text-center leading-relaxed"
+                    >Way To Clearance<br />Books</span
+                  ><span>&copy; 2025</span>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="w-full lg:w-1/4 lg:sticky lg:top-1/3 flex lg:justify-end z-20 mt-8 lg:mt-0 fade-up"
+            >
+              <a
+                href="portfolio.html"
+                class="flex items-center gap-4 bg-gray-100 p-2 pr-6 rounded-md hover:bg-gray-200 transition-colors shadow-sm"
+              >
+                <img
+                  src="assets/img/image(38).png"
+                  class="w-10 h-10 object-cover rounded"
+                />
+                <span
+                  class="text-[10px] font-semibold uppercase tracking-widest"
+                  >See all (07)</span
+                >
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- 05 Pricing (RESTORED) -->
+        <section
+          class="w-full px-6 py-20 md:py-32 border-t border-brand-border bg-brand-dark text-brand-light"
+        >
+          <div class="max-w-7xl mx-auto">
+            <div
+              class="flex justify-between items-start text-[10px] font-semibold uppercase tracking-widest text-gray-400 mb-16 fade-up"
+            >
+              <span>(04)</span><span>(Pricing)</span><span>&copy; 2025</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div
+                class="border border-brand-border p-8 flex flex-col gap-8 rounded-xl hover:bg-brand-light hover:text-brand-dark transition-colors duration-500 group pricing-card"
+              >
+                <div>
+                  <h3
+                    class="break-words text-2xl font-semibold uppercase tracking-tight mb-4"
+                  >
+                    Starter
+                  </h3>
+                  <p
+                    class="text-sm font-light text-gray-400 group-hover:text-gray-600 transition-colors"
+                  >
+                    Essential design support for new brands taking the first
+                    step.
+                  </p>
+                </div>
+                <div class="text-5xl font-medium">
+                  $999
+                  <span
+                    class="text-xs font-semibold uppercase tracking-widest opacity-50"
+                    >/ Month</span
+                  >
+                </div>
+                <a
+                  href="contact.html"
+                  class="w-full py-4 text-center border border-current rounded-full font-semibold uppercase tracking-widest text-[10px] group-hover:bg-brand-dark group-hover:text-brand-light transition-colors"
+                  >Join Us Now</a
+                >
+                <ul
+                  class="flex flex-col gap-4 text-sm font-light opacity-80 mt-4"
+                >
+                  <li class="flex gap-3 items-center">
+                    <span class="w-1 h-1 bg-current rounded-full"></span>
+                    Custom-crafted visual identity
+                  </li>
+                  <li class="flex gap-3 items-center">
+                    <span class="w-1 h-1 bg-current rounded-full"></span>
+                    Responsive, modern website design
+                  </li>
+                  <li class="flex gap-3 items-center">
+                    <span class="w-1 h-1 bg-current rounded-full"></span>
+                    High-quality imagery and production
+                  </li>
+                </ul>
+              </div>
+
+              <div
+                class="bg-brand-light text-brand-dark p-8 flex flex-col gap-8 rounded-xl pricing-card transform md:-translate-y-4 shadow-2xl"
+              >
+                <div>
+                  <h3
+                    class="break-words text-2xl font-semibold uppercase tracking-tight mb-4"
+                  >
+                    Professional
+                  </h3>
+                  <p class="text-sm font-light text-gray-600">
+                    Ideal for brands seeking refined systems and digital
+                    presence.
+                  </p>
+                </div>
+                <div class="text-5xl font-medium">
+                  $7299
+                  <span
+                    class="text-xs font-semibold uppercase tracking-widest text-gray-400"
+                    >/ Month</span
+                  >
+                </div>
+                <a
+                  href="contact.html"
+                  class="w-full py-4 text-center bg-brand-dark text-brand-light rounded-full font-semibold uppercase tracking-widest text-[10px] hover:bg-brand-gray transition-colors"
+                  >Join Us Now</a
+                >
+                <ul
+                  class="flex flex-col gap-4 text-sm font-light text-gray-700 mt-4"
+                >
+                  <li class="flex gap-3 items-center">
+                    <span class="w-1 h-1 bg-brand-dark rounded-full"></span>
+                    Custom-crafted visual identity
+                  </li>
+                  <li class="flex gap-3 items-center">
+                    <span class="w-1 h-1 bg-brand-dark rounded-full"></span>
+                    Responsive, modern website design
+                  </li>
+                  <li class="flex gap-3 items-center">
+                    <span class="w-1 h-1 bg-brand-dark rounded-full"></span>
+                    Structured layouts with typography
+                  </li>
+                  <li class="flex gap-3 items-center">
+                    <span class="w-1 h-1 bg-brand-dark rounded-full"></span>
+                    Conversion-focused page strategy
+                  </li>
+                </ul>
+              </div>
+
+              <div
+                class="border border-brand-border p-8 flex flex-col gap-8 rounded-xl hover:bg-brand-light hover:text-brand-dark transition-colors duration-500 group pricing-card"
+              >
+                <div>
+                  <h3
+                    class="break-words text-2xl font-semibold uppercase tracking-tight mb-4"
+                  >
+                    Elite
+                  </h3>
+                  <p
+                    class="text-sm font-light text-gray-400 group-hover:text-gray-600 transition-colors"
+                  >
+                    High-touch and a fully crafted brand experience by Xen-AI.
+                  </p>
+                </div>
+                <div class="text-5xl font-medium">
+                  $10999
+                  <span
+                    class="text-xs font-semibold uppercase tracking-widest opacity-50"
+                    >/ Month</span
+                  >
+                </div>
+                <a
+                  href="contact.html"
+                  class="w-full py-4 text-center border border-current rounded-full font-semibold uppercase tracking-widest text-[10px] group-hover:bg-brand-dark group-hover:text-brand-light transition-colors"
+                  >Join Us Now</a
+                >
+                <ul
+                  class="flex flex-col gap-4 text-sm font-light opacity-80 mt-4"
+                >
+                  <li class="flex gap-3 items-center">
+                    <span class="w-1 h-1 bg-current rounded-full"></span> All
+                    Professional Features
+                  </li>
+                  <li class="flex gap-3 items-center">
+                    <span class="w-1 h-1 bg-current rounded-full"></span>
+                    Seamless CMS and organization
+                  </li>
+                  <li class="flex gap-3 items-center">
+                    <span class="w-1 h-1 bg-current rounded-full"></span>
+                    Dedicated support for revisions
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 06 FAQ Section (NEW) -->
+        <section
+          class="w-full px-6 py-20 md:py-32 border-t border-brand-border bg-brand-dark"
+        >
+          <div class="max-w-4xl mx-auto">
+            <div
+              class="flex justify-between items-start text-[10px] font-semibold uppercase tracking-widest text-gray-500 mb-16 fade-up"
+            >
+              <span>(05)</span><span>(Frequently Asked Questions)</span
+              ><span>&copy; 2025</span>
+            </div>
+
+            <div class="flex flex-col gap-2">
+              <!-- FAQ Item -->
+              <details
+                class="group border-b border-brand-border pb-6 pt-6 fade-up cursor-pointer"
+                open
+              >
+                <summary
+                  class="flex justify-between items-center gap-4 font-medium text-lg md:text-2xl list-none hover:text-gray-300 transition-colors"
+                >
+                  What distinguishes us from other agencies?
+                  <span
+                    class="text-3xl font-light group-open:rotate-45 transition-transform duration-300"
+                    >+</span
+                  >
+                </summary>
+                <p
+                  class="mt-6 text-gray-400 text-sm leading-relaxed font-light pr-12"
+                >
+                  We combine high-end aesthetic design with rigorous strategic
+                  thinking. Instead of bloated teams, you work directly with
+                  senior creatives who execute rapidly without compromising
+                  quality.
+                </p>
+              </details>
+
+              <!-- FAQ Item -->
+              <details
+                class="group border-b border-brand-border pb-6 pt-6 fade-up cursor-pointer"
+              >
+                <summary
+                  class="flex justify-between items-center gap-4 font-medium text-lg md:text-2xl list-none hover:text-gray-300 transition-colors"
+                >
+                  Why not hire an in-house designer or freelancer?
+                  <span
+                    class="text-3xl font-light group-open:rotate-45 transition-transform duration-300"
+                    >+</span
+                  >
+                </summary>
+                <p
+                  class="mt-6 text-gray-400 text-sm leading-relaxed font-light pr-12"
+                >
+                  Hiring a senior designer can cost upwards of $100k+/year plus
+                  benefits, and you may not always have enough work to keep them
+                  busy. With Xen-AI, you get premium agency quality on-demand,
+                  scaling up or down exactly as you need.
+                </p>
+              </details>
+
+              <!-- FAQ Item -->
+              <details
+                class="group border-b border-brand-border pb-6 pt-6 fade-up cursor-pointer"
+              >
+                <summary
+                  class="flex justify-between items-center gap-4 font-medium text-lg md:text-2xl list-none hover:text-gray-300 transition-colors"
+                >
+                  Are creative requests truly unlimited?
+                  <span
+                    class="text-3xl font-light group-open:rotate-45 transition-transform duration-300"
+                    >+</span
+                  >
+                </summary>
+                <p
+                  class="mt-6 text-gray-400 text-sm leading-relaxed font-light pr-12"
+                >
+                  Yes. Once subscribed, you can add as many design requests to
+                  your queue as you'd like. They will be delivered one by one,
+                  ensuring maximum quality and attention to detail for each
+                  piece.
+                </p>
+              </details>
+
+              <!-- FAQ Item -->
+              <details
+                class="group border-b border-brand-border pb-6 pt-6 fade-up cursor-pointer"
+              >
+                <summary
+                  class="flex justify-between items-center gap-4 font-medium text-lg md:text-2xl list-none hover:text-gray-300 transition-colors"
+                >
+                  How fast will I receive my work?
+                  <span
+                    class="text-3xl font-light group-open:rotate-45 transition-transform duration-300"
+                    >+</span
+                  >
+                </summary>
+                <p
+                  class="mt-6 text-gray-400 text-sm leading-relaxed font-light pr-12"
+                >
+                  On average, most standard requests are completed in just two
+                  days or less. More complex requests such as entire website
+                  designs may take longer and will be broken down into
+                  milestones.
+                </p>
+              </details>
+            </div>
+          </div>
+        </section>
+
+        <!-- Infinite Marquee -->
+        <section
+          class="w-full py-8 border-t border-b border-brand-border overflow-hidden bg-brand-dark flex items-center"
+        >
+          <div
+            class="marquee-content flex gap-8 whitespace-nowrap text-2xl sm:text-3xl md:text-5xl break-words font-medium uppercase tracking-tight text-brand-light opacity-90"
+          >
+            <span>We Are Faster, Better And Cheaper</span>
+            <span class="text-brand-dark" style="-webkit-text-stroke: 1px white"
+              >*</span
+            >
+            <span>Contact Now</span>
+            <span class="text-brand-dark" style="-webkit-text-stroke: 1px white"
+              >*</span
+            >
+            <span>We Are Faster, Better And Cheaper</span>
+            <span class="text-brand-dark" style="-webkit-text-stroke: 1px white"
+              >*</span
+            >
+            <span>Contact Now</span>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer
+      class="w-full bg-brand-light text-brand-dark px-6 py-12 md:py-16 md:py-24"
+    >
+      <div
+        class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-end gap-12"
+      >
+        <div class="flex flex-col gap-6">
+          <h2
+            class="break-words text-2xl sm:text-3xl md:text-5xl break-words font-medium tracking-tight"
+          >
+            Let's work together
+          </h2>
+          <a
+            href="mailto:contact@xen-ai.com"
+            class="text-lg md:text-xl hover:underline underline-offset-8 font-medium"
+            >contact@xen-ai.com</a
+          >
+          <a
+            href="contact.html"
+            class="mt-4 inline-flex items-center gap-2 border border-brand-dark px-6 py-3 rounded-full hover:bg-brand-dark hover:text-brand-light transition-colors w-max font-semibold uppercase text-[10px] tracking-widest"
+          >
+            Contact Now
+          </a>
+        </div>
+        <div class="flex flex-col items-start md:items-end gap-12">
+          <nav
+            class="flex flex-wrap gap-6 text-[10px] font-semibold uppercase tracking-widest"
+          >
+            <a href="index.html" class="hover:opacity-50 transition-opacity"
+              >Home <span class="text-gray-400 ml-1">01</span></a
+            >
+            <a href="portfolio.html" class="hover:opacity-50 transition-opacity"
+              >Portfolio <span class="text-gray-400 ml-1">02</span></a
+            >
+            <a href="about.html" class="hover:opacity-50 transition-opacity"
+              >About <span class="text-gray-400 ml-1">03</span></a
+            >
+            <a href="services.html" class="hover:opacity-50 transition-opacity"
+              >Services <span class="text-gray-400 ml-1">04</span></a
+            >
+            <a href="contact.html" class="hover:opacity-50 transition-opacity"
+              >Contact <span class="text-gray-400 ml-1">05</span></a
+            >
+          </nav>
+          <div
+            class="flex items-center gap-8 text-gray-500 text-[10px] font-semibold uppercase tracking-widest"
+          >
+            <p>&copy; 2025 XEN-AI</p>
+            <p>19'</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>

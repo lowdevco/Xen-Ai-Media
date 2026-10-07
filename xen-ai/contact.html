@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XEN-AI - Contact</title>
+    <link rel="icon" href="data:,">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+            --font-sans: "Montserrat", sans-serif;
+            --color-brand-dark: #0a0a0a;
+            --color-brand-light: #ffffff;
+            --color-brand-gray: #1a1a1a;
+            --color-brand-border: #2a2a2a;
+        }
+    </style>
+    
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body class="bg-brand-dark text-brand-light font-sans antialiased overflow-x-hidden selection:bg-brand-light selection:text-brand-dark">
+
+    <!-- Navbar -->
+    <header class="fixed top-0 left-0 w-full z-50 px-6 py-4 flex justify-between items-center mix-blend-difference">
+        <a href="index.html" class="text-lg font-semibold uppercase tracking-widest flex items-center gap-2 z-[60]">
+            <img src="assets/img/image(23).png" alt="Logo" class="w-6 h-6 object-contain invert opacity-80">
+            XEN-AI
+        </a>
+        <nav class="hidden md:flex items-center gap-8 text-[10px] font-semibold uppercase tracking-widest">
+            <a href="index.html" class="flex gap-2 items-center hover:opacity-50 transition-opacity"><span>Home</span><span class="text-[9px] text-gray-500">01</span></a>
+            <a href="portfolio.html" class="flex gap-2 items-center hover:opacity-50 transition-opacity"><span>Portfolio</span><span class="text-[9px] text-gray-500">02</span></a>
+            <a href="about.html" class="flex gap-2 items-center hover:opacity-50 transition-opacity"><span>About</span><span class="text-[9px] text-gray-500">03</span></a>
+            <a href="services.html" class="flex gap-2 items-center hover:opacity-50 transition-opacity"><span>Services</span><span class="text-[9px] text-gray-500">04</span></a>
+            <a href="contact.html" class="flex gap-2 items-center hover:opacity-50 transition-opacity"><span>Contact</span><span class="text-[9px] text-gray-500">05</span></a>
+        </nav>
+        <div class="flex items-center gap-4 z-[60]">
+            <a href="contact.html" class="hidden lg:flex items-center gap-3 bg-brand-light text-brand-dark px-6 py-2.5 rounded-full hover:bg-gray-200 transition-colors">
+                <span class="text-[10px] font-semibold uppercase tracking-wider">Contact</span>
+            </a>
+            <button id="mobile-menu-btn" class="md:hidden flex flex-col justify-center items-center gap-[6px] w-10 h-10 z-[60] focus:outline-none">
+                <span class="w-6 h-[1px] bg-brand-light transition-all duration-300"></span>
+                <span class="w-6 h-[1px] bg-brand-light transition-all duration-300"></span>
+            </button>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu-overlay" class="absolute top-[100%] right-6 mt-4 w-[240px] bg-[#121212] border border-[#2a2a2a] rounded-2xl flex flex-col items-center gap-6 py-8 opacity-0 pointer-events-none transition-all duration-300 z-50 shadow-2xl translate-y-[-10px]">
+            <a href="index.html" class="text-[11px] font-semibold uppercase tracking-widest hover:text-gray-400 transition-colors">Home</a>
+            <a href="portfolio.html" class="text-[11px] font-semibold uppercase tracking-widest hover:text-gray-400 transition-colors">Portfolio</a>
+            <a href="about.html" class="text-[11px] font-semibold uppercase tracking-widest hover:text-gray-400 transition-colors">About</a>
+            <a href="services.html" class="text-[11px] font-semibold uppercase tracking-widest hover:text-gray-400 transition-colors">Services</a>
+            <a href="contact.html" class="text-[10px] font-semibold uppercase tracking-widest text-brand-dark bg-brand-light px-6 py-2.5 rounded-full hover:bg-gray-300 transition-colors mt-2">Contact</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="smooth-wrapper">
+        <div id="smooth-content">
+            
+            <!-- Contact Hero & Form -->
+            <section class="w-full pt-32 pb-12 md:pt-40 md:pb-24 px-6 bg-brand-dark border-b border-brand-border">
+                <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12 md:gap-16 lg:gap-24">
+                    
+                    <!-- Left: Heading -->
+                    <div class="lg:w-1/2 flex flex-col gap-12">
+                        <div class="flex gap-4 text-[10px] font-semibold uppercase tracking-widest text-gray-500 fade-up">
+                            <span>(04)</span><span>(Contact)</span>
+                        </div>
+                        <h1 class="break-words text-3xl sm:text-4xl md:text-6xl lg:text-8xl break-words font-medium tracking-tight leading-[1.1] text-reveal">
+                            Get In Touch
+                        </h1>
+                        <p class="text-gray-400 font-light text-lg md:text-xl leading-relaxed max-w-md fade-up">
+                            Pick a plan, submit a job request, and your project will kickoff within 24 hours. Let's create something extraordinary together.
+                        </p>
+                        
+                        <div class="mt-8 flex flex-col gap-6 fade-up">
+                            <div class="flex flex-col gap-2">
+                                <span class="text-[10px] font-semibold uppercase tracking-widest text-gray-500">Email Us</span>
+                                <a href="mailto:contact@xen-ai.com" class="text-xl font-medium hover:text-gray-300 transition-colors">contact@xen-ai.com</a>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <span class="text-[10px] font-semibold uppercase tracking-widest text-gray-500">Call Us</span>
+                                <a href="tel:+1234567890" class="text-xl font-medium hover:text-gray-300 transition-colors">+1 (234) 567-890</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Form -->
+                    <div class="lg:w-1/2 mt-8 lg:mt-0 fade-up">
+                        <form class="flex flex-col gap-8">
+                            <div class="flex flex-col md:flex-row gap-8">
+                                <div class="flex flex-col gap-2 flex-1 relative group">
+                                    <input type="text" id="firstName" placeholder=" " class="peer w-full bg-transparent border-b border-brand-border py-4 focus:outline-none focus:border-brand-light text-brand-light transition-colors" required>
+                                    <label for="firstName" class="absolute left-0 top-4 text-gray-500 text-sm uppercase tracking-widest font-semibold transition-all peer-focus:-top-4 peer-focus:text-[10px] peer-focus:text-brand-light peer-not-placeholder-shown:-top-4 peer-not-placeholder-shown:text-[10px] peer-not-placeholder-shown:text-brand-light">First Name *</label>
+                                </div>
+                                <div class="flex flex-col gap-2 flex-1 relative group">
+                                    <input type="text" id="lastName" placeholder=" " class="peer w-full bg-transparent border-b border-brand-border py-4 focus:outline-none focus:border-brand-light text-brand-light transition-colors" required>
+                                    <label for="lastName" class="absolute left-0 top-4 text-gray-500 text-sm uppercase tracking-widest font-semibold transition-all peer-focus:-top-4 peer-focus:text-[10px] peer-focus:text-brand-light peer-not-placeholder-shown:-top-4 peer-not-placeholder-shown:text-[10px] peer-not-placeholder-shown:text-brand-light">Last Name *</label>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col gap-2 relative mt-4">
+                                <select id="category" class="w-full bg-transparent border-b border-brand-border py-4 focus:outline-none focus:border-brand-light text-brand-light appearance-none rounded-none cursor-pointer">
+                                    <option value="" disabled selected hidden>Select a Category</option>
+                                    <option value="art-direction" class="bg-brand-dark">Art Direction</option>
+                                    <option value="ai-video" class="bg-brand-dark">AI Video</option>
+                                    <option value="web-design" class="bg-brand-dark">Web Design</option>
+                                    <option value="branding" class="bg-brand-dark">Branding</option>
+                                </select>
+                                <div class="absolute right-0 top-1/2 -translate-y-1/2 pointer-events-none">
+                                    <svg class="w-4 h-4 text-brand-light" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col gap-2 relative mt-4">
+                                <input type="email" id="email" placeholder=" " class="peer w-full bg-transparent border-b border-brand-border py-4 focus:outline-none focus:border-brand-light text-brand-light transition-colors" required>
+                                <label for="email" class="absolute left-0 top-4 text-gray-500 text-sm uppercase tracking-widest font-semibold transition-all peer-focus:-top-4 peer-focus:text-[10px] peer-focus:text-brand-light peer-not-placeholder-shown:-top-4 peer-not-placeholder-shown:text-[10px] peer-not-placeholder-shown:text-brand-light">Email Address *</label>
+                            </div>
+
+                            <div class="flex flex-col gap-2 relative mt-4">
+                                <textarea id="message" rows="4" placeholder=" " class="peer w-full bg-transparent border-b border-brand-border py-4 focus:outline-none focus:border-brand-light text-brand-light transition-colors resize-none" required></textarea>
+                                <label for="message" class="absolute left-0 top-4 text-gray-500 text-sm uppercase tracking-widest font-semibold transition-all peer-focus:-top-4 peer-focus:text-[10px] peer-focus:text-brand-light peer-not-placeholder-shown:-top-4 peer-not-placeholder-shown:text-[10px] peer-not-placeholder-shown:text-brand-light">Your Message *</label>
+                            </div>
+
+                            <button type="submit" class="mt-8 bg-brand-light text-brand-dark font-semibold uppercase tracking-widest text-[10px] px-8 py-5 rounded-full hover:bg-gray-300 transition-colors self-start inline-flex items-center gap-4 group">
+                                Submit Request
+                                <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Career Section -->
+            <section class="w-full px-6 py-20 md:py-32 bg-brand-dark border-b border-brand-border">
+                <div class="max-w-7xl mx-auto flex flex-col gap-16">
+                    <div class="flex justify-between items-start text-[10px] font-semibold uppercase tracking-widest text-gray-500 fade-up">
+                        <span>(Careers)</span><span>(Now Casting)</span>
+                    </div>
+
+                    <div class="flex flex-col md:flex-row gap-10 md:gap-12 lg:gap-24">
+                        <!-- Left Column: Title & Intro -->
+                        <div class="md:w-1/3 flex flex-col gap-8 fade-up">
+                            <h2 class="break-words text-2xl sm:text-3xl md:text-5xl break-words font-medium tracking-tight">Join the crew.</h2>
+                            <p class="text-gray-400 font-light leading-relaxed">
+                                We cut frames the world hasn't seen yet. Xen AI is a creative studio based in Sulthan Bathery, Wayanad, dedicated to producing visually engaging and innovative digital content.
+                            </p>
+                            
+                            <div class="mt-8 flex flex-col gap-6">
+                                <h3 class="break-words text-[10px] font-semibold uppercase tracking-widest text-gray-500">Perks & Benefits</h3>
+                                <ul class="flex flex-col gap-4 text-sm font-light text-brand-light">
+                                    <li class="flex items-center gap-3"><span class="text-gray-600">✦</span> Real client work from day one</li>
+                                    <li class="flex items-center gap-3"><span class="text-gray-600">✦</span> Latest AI tooling access</li>
+                                    <li class="flex items-center gap-3"><span class="text-gray-600">✦</span> Growth without a ceiling</li>
+                                    <li class="flex items-center gap-3"><span class="text-gray-600">✦</span> Portfolio-first culture</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Right Column: Open Roles -->
+                        <div class="md:w-2/3 flex flex-col gap-8">
+                            <h3 class="break-words text-xl font-medium tracking-tight fade-up">Open Roles</h3>
+                            
+                            <!-- Role Item -->
+                            <details class="group border border-brand-border rounded-xl p-8 bg-brand-gray/20 hover:bg-brand-gray/50 transition-colors fade-up cursor-pointer">
+                                <summary class="flex flex-col md:flex-row md:items-center justify-between gap-6 list-none outline-none">
+                                    <div class="flex flex-col gap-2">
+                                        <h4 class="text-2xl font-medium tracking-tight">AI Content Creator & Script Writer</h4>
+                                        <span class="text-[10px] font-semibold uppercase tracking-widest text-gray-500">Full-Time &mdash; Sulthan Bathery, Wayanad</span>
+                                    </div>
+                                    <div class="flex items-center gap-4 self-start md:self-auto">
+                                        <a href="mailto:info@xenaimedia.com?subject=Application:%20AI%20Content%20Creator" class="text-[10px] font-semibold uppercase tracking-widest text-brand-light border border-brand-border px-4 py-2 rounded-full hover:bg-brand-light hover:text-brand-dark transition-colors">Apply</a>
+                                        <span class="text-2xl font-light group-open:rotate-45 transition-transform duration-300 ml-4">+</span>
+                                    </div>
+                                </summary>
+                                
+                                <div class="mt-8 pt-8 border-t border-brand-border/50 flex flex-col gap-8">
+                                    <p class="text-gray-400 text-sm font-light leading-relaxed">
+                                        Write scripts and generate AI-driven content that turns ideas into stories worth watching.
+                                    </p>
+                                    
+                                    <div class="flex flex-col md:flex-row gap-8">
+                                        <div class="flex-1 flex flex-col gap-4">
+                                            <h5 class="text-[10px] font-semibold uppercase tracking-widest text-gray-500">What you'll do</h5>
+                                            <ul class="text-sm font-light text-gray-400 list-disc pl-4 flex flex-col gap-2 marker:text-gray-600">
+                                                <li>Write scripts, hooks and captions for reels, shorts and campaigns.</li>
+                                                <li>Turn scripts into AI-generated video, image and voice content.</li>
+                                                <li>Shape story, tone and pacing across a project from concept to final cut.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="flex-1 flex flex-col gap-4">
+                                            <h5 class="text-[10px] font-semibold uppercase tracking-widest text-gray-500">What you bring</h5>
+                                            <ul class="text-sm font-light text-gray-400 list-disc pl-4 flex flex-col gap-2 marker:text-gray-600">
+                                                <li>Strong writing instincts — hooks, pacing and voice that hold attention.</li>
+                                                <li>Hands-on experience with AI content tools or a fast willingness to learn them.</li>
+                                                <li>A storyteller's eye, not just a software skillset.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </details>
+
+                            <!-- General Application -->
+                            <div class="mt-4 p-8 border border-brand-border border-dashed rounded-xl flex flex-col md:flex-row justify-between items-start md:items-center gap-6 fade-up">
+                                <div class="flex flex-col gap-2">
+                                    <h4 class="text-lg font-medium tracking-tight">Don't see your role?</h4>
+                                    <p class="text-gray-500 text-sm font-light">Pitch us the frame we're missing. Send an open application.</p>
+                                </div>
+                                <a href="mailto:info@xenaimedia.com?subject=Open Application" class="text-[10px] font-semibold uppercase tracking-widest text-brand-dark bg-brand-light px-6 py-3 rounded-full hover:bg-gray-300 transition-colors whitespace-nowrap">
+                                    Open Application
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ Section (Reused) -->
+            <section class="w-full px-6 py-20 md:py-32 bg-brand-dark">
+                <div class="max-w-4xl mx-auto">
+                    <div class="flex justify-between items-start text-[10px] font-semibold uppercase tracking-widest text-gray-500 mb-16 fade-up">
+                        <span>(01)</span><span>(Frequently Asked Questions)</span><span>&copy; 2025</span>
+                    </div>
+
+                    <div class="flex flex-col gap-2">
+                        <details class="group border-b border-brand-border pb-6 pt-6 fade-up cursor-pointer">
+                            <summary class="flex justify-between items-center gap-4 font-medium text-lg md:text-2xl list-none hover:text-gray-300 transition-colors">
+                                What distinguishes us from other agencies?
+                                <span class="text-3xl font-light group-open:rotate-45 transition-transform duration-300">+</span>
+                            </summary>
+                            <p class="mt-6 text-gray-400 text-sm leading-relaxed font-light pr-12">
+                                We combine high-end aesthetic design with rigorous strategic thinking. Instead of bloated teams, you work directly with senior creatives who execute rapidly without compromising quality.
+                            </p>
+                        </details>
+                        <details class="group border-b border-brand-border pb-6 pt-6 fade-up cursor-pointer">
+                            <summary class="flex justify-between items-center gap-4 font-medium text-lg md:text-2xl list-none hover:text-gray-300 transition-colors">
+                                Why not hire an in-house designer or freelancer?
+                                <span class="text-3xl font-light group-open:rotate-45 transition-transform duration-300">+</span>
+                            </summary>
+                            <p class="mt-6 text-gray-400 text-sm leading-relaxed font-light pr-12">
+                                Hiring a senior designer can cost upwards of $100k+/year plus benefits. With Xen-AI, you get premium agency quality on-demand, scaling up or down exactly as you need.
+                            </p>
+                        </details>
+                        <details class="group border-b border-brand-border pb-6 pt-6 fade-up cursor-pointer">
+                            <summary class="flex justify-between items-center gap-4 font-medium text-lg md:text-2xl list-none hover:text-gray-300 transition-colors">
+                                Are creative requests truly unlimited?
+                                <span class="text-3xl font-light group-open:rotate-45 transition-transform duration-300">+</span>
+                            </summary>
+                            <p class="mt-6 text-gray-400 text-sm leading-relaxed font-light pr-12">
+                                Yes. Once subscribed, you can add as many design requests to your queue as you'd like. They will be delivered one by one.
+                            </p>
+                        </details>
+                        <details class="group border-b border-brand-border pb-6 pt-6 fade-up cursor-pointer">
+                            <summary class="flex justify-between items-center gap-4 font-medium text-lg md:text-2xl list-none hover:text-gray-300 transition-colors">
+                                How fast will I receive my work?
+                                <span class="text-3xl font-light group-open:rotate-45 transition-transform duration-300">+</span>
+                            </summary>
+                            <p class="mt-6 text-gray-400 text-sm leading-relaxed font-light pr-12">
+                                On average, most standard requests are completed in just two days or less.
+                            </p>
+                        </details>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full bg-brand-light text-brand-dark px-6 py-12 md:py-16 md:py-24">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-end gap-12">
+            <div class="flex flex-col gap-6">
+                <h2 class="break-words text-2xl sm:text-3xl md:text-5xl break-words font-medium tracking-tight">Let's work together</h2>
+                <a href="mailto:contact@xen-ai.com" class="text-lg md:text-xl hover:underline underline-offset-8 font-medium">contact@xen-ai.com</a>
+                <a href="contact.html" class="mt-4 inline-flex items-center gap-2 border border-brand-dark px-6 py-3 rounded-full hover:bg-brand-dark hover:text-brand-light transition-colors w-max font-semibold uppercase text-[10px] tracking-widest">
+                    Contact Now
+                </a>
+            </div>
+            <div class="flex flex-col items-start md:items-end gap-12">
+                <nav class="flex flex-wrap gap-6 text-[10px] font-semibold uppercase tracking-widest">
+                    <a href="index.html" class="hover:opacity-50 transition-opacity">Home <span class="text-gray-400 ml-1">01</span></a>
+                    <a href="portfolio.html" class="hover:opacity-50 transition-opacity">Portfolio <span class="text-gray-400 ml-1">02</span></a>
+                    <a href="about.html" class="hover:opacity-50 transition-opacity">About <span class="text-gray-400 ml-1">03</span></a>
+                    <a href="services.html" class="hover:opacity-50 transition-opacity">Services <span class="text-gray-400 ml-1">04</span></a>
+                    <a href="contact.html" class="hover:opacity-50 transition-opacity">Contact <span class="text-gray-400 ml-1">05</span></a>
+                </nav>
+                <div class="flex items-center gap-8 text-gray-500 text-[10px] font-semibold uppercase tracking-widest">
+                    <p>&copy; 2025 XEN-AI</p>
+                    <p>19'</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/contact.js"></script>
+</body>
+</html>

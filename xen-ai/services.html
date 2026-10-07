@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XEN-AI - Services & Pricing</title>
+    <link rel="icon" href="data:,">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+            --font-sans: "Montserrat", sans-serif;
+            --color-brand-dark: #0a0a0a;
+            --color-brand-light: #ffffff;
+            --color-brand-gray: #1a1a1a;
+            --color-brand-border: #2a2a2a;
+        }
+    </style>
+    
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body class="bg-brand-dark text-brand-light font-sans antialiased overflow-x-hidden selection:bg-brand-light selection:text-brand-dark">
+
+    <!-- Navbar -->
+    <header class="fixed top-0 left-0 w-full z-50 px-6 py-4 flex justify-between items-center mix-blend-difference">
+        <a href="index.html" class="text-lg font-semibold uppercase tracking-widest flex items-center gap-2 z-[60]">
+            <img src="assets/img/image(23).png" alt="Logo" class="w-6 h-6 object-contain invert opacity-80">
+            XEN-AI
+        </a>
+        <nav class="hidden md:flex items-center gap-8 text-[10px] font-semibold uppercase tracking-widest">
+            <a href="index.html" class="flex gap-2 items-center hover:opacity-50 transition-opacity"><span>Home</span><span class="text-[9px] text-gray-500">01</span></a>
+            <a href="portfolio.html" class="flex gap-2 items-center hover:opacity-50 transition-opacity"><span>Portfolio</span><span class="text-[9px] text-gray-500">02</span></a>
+            <a href="about.html" class="flex gap-2 items-center hover:opacity-50 transition-opacity"><span>About</span><span class="text-[9px] text-gray-500">03</span></a>
+            <a href="services.html" class="flex gap-2 items-center hover:opacity-50 transition-opacity"><span>Services</span><span class="text-[9px] text-gray-500">04</span></a>
+            <a href="contact.html" class="flex gap-2 items-center hover:opacity-50 transition-opacity"><span>Contact</span><span class="text-[9px] text-gray-500">05</span></a>
+        </nav>
+        <div class="flex items-center gap-4 z-[60]">
+            <a href="contact.html" class="hidden lg:flex items-center gap-3 bg-brand-light text-brand-dark px-6 py-2.5 rounded-full hover:bg-gray-200 transition-colors">
+                <span class="text-[10px] font-semibold uppercase tracking-wider">Contact</span>
+            </a>
+            <button id="mobile-menu-btn" class="md:hidden flex flex-col justify-center items-center gap-[6px] w-10 h-10 z-[60] focus:outline-none">
+                <span class="w-6 h-[1px] bg-brand-light transition-all duration-300"></span>
+                <span class="w-6 h-[1px] bg-brand-light transition-all duration-300"></span>
+            </button>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu-overlay" class="absolute top-[100%] right-6 mt-4 w-[240px] bg-[#121212] border border-[#2a2a2a] rounded-2xl flex flex-col items-center gap-6 py-8 opacity-0 pointer-events-none transition-all duration-300 z-50 shadow-2xl translate-y-[-10px]">
+            <a href="index.html" class="text-[11px] font-semibold uppercase tracking-widest hover:text-gray-400 transition-colors">Home</a>
+            <a href="portfolio.html" class="text-[11px] font-semibold uppercase tracking-widest hover:text-gray-400 transition-colors">Portfolio</a>
+            <a href="about.html" class="text-[11px] font-semibold uppercase tracking-widest hover:text-gray-400 transition-colors">About</a>
+            <a href="services.html" class="text-[11px] font-semibold uppercase tracking-widest hover:text-gray-400 transition-colors">Services</a>
+            <a href="contact.html" class="text-[10px] font-semibold uppercase tracking-widest text-brand-dark bg-brand-light px-6 py-2.5 rounded-full hover:bg-gray-300 transition-colors mt-2">Contact</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="smooth-wrapper">
+        <div id="smooth-content">
+            
+            <!-- Hero -->
+            <section class="w-full pt-32 pb-12 md:pt-40 md:pb-24 px-6 bg-brand-dark">
+                <div class="max-w-7xl mx-auto flex flex-col gap-12">
+                    <div class="flex gap-4 text-[10px] font-semibold uppercase tracking-widest text-gray-500 fade-up">
+                        <span>Capabilities</span><span>&copy; 2025</span>
+                    </div>
+                    <h1 class="break-words text-3xl sm:text-4xl md:text-6xl lg:text-8xl break-words font-medium tracking-tight leading-[1.1] text-reveal max-w-5xl">
+                        Where AI meets creativity.
+                    </h1>
+                    <p class="text-gray-400 font-light text-lg md:text-xl leading-relaxed max-w-2xl fade-up">
+                        Blending human creativity with advanced technology to deliver futuristic media solutions. We automate the mundane and elevate the exceptional.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Services Grid -->
+            <section class="w-full px-6 py-16 md:py-24 bg-brand-dark border-t border-brand-border">
+                <div class="max-w-7xl mx-auto flex flex-col gap-16">
+                    <div class="flex gap-4 text-[10px] font-semibold uppercase tracking-widest text-gray-500 fade-up">
+                        <span>(01)</span><span>(AI-Powered Services)</span>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        
+                        <!-- Service Card -->
+                        <div class="flex flex-col gap-6 p-8 border border-brand-border rounded-xl group hover:border-gray-500 transition-all duration-300 fade-up hover:-translate-y-1">
+                            <div class="w-12 h-12 rounded-full bg-brand-gray flex items-center justify-center text-xl text-brand-light font-light group-hover:bg-brand-light group-hover:text-brand-dark transition-colors">01</div>
+                            <div>
+                                <h3 class="break-words text-xl font-medium tracking-tight mb-3">AI Video Production</h3>
+                                <p class="text-gray-400 font-light text-sm leading-relaxed">Short-form videos, AI avatars, voiceovers, and script-to-video automation perfect for reels and promos.</p>
+                            </div>
+                        </div>
+
+                        <!-- Service Card -->
+                        <div class="flex flex-col gap-6 p-8 border border-brand-border rounded-xl group hover:border-gray-500 transition-all duration-300 fade-up hover:-translate-y-1">
+                            <div class="w-12 h-12 rounded-full bg-brand-gray flex items-center justify-center text-xl text-brand-light font-light group-hover:bg-brand-light group-hover:text-brand-dark transition-colors">02</div>
+                            <div>
+                                <h3 class="break-words text-xl font-medium tracking-tight mb-3">AI Visual Content</h3>
+                                <p class="text-gray-400 font-light text-sm leading-relaxed">AI-generated illustrations, branding graphics, logos, and cohesive visual design assets.</p>
+                            </div>
+                        </div>
+
+                        <!-- Service Card -->
+                        <div class="flex flex-col gap-6 p-8 border border-brand-border rounded-xl group hover:border-gray-500 transition-all duration-300 fade-up hover:-translate-y-1">
+                            <div class="w-12 h-12 rounded-full bg-brand-gray flex items-center justify-center text-xl text-brand-light font-light group-hover:bg-brand-light group-hover:text-brand-dark transition-colors">03</div>
+                            <div>
+                                <h3 class="break-words text-xl font-medium tracking-tight mb-3">Creator Tools</h3>
+                                <p class="text-gray-400 font-light text-sm leading-relaxed">Auto-edited reels, virtual influencer creation, and trend-based content tracking.</p>
+                            </div>
+                        </div>
+
+                        <!-- Service Card -->
+                        <div class="flex flex-col gap-6 p-8 border border-brand-border rounded-xl group hover:border-gray-500 transition-all duration-300 fade-up hover:-translate-y-1">
+                            <div class="w-12 h-12 rounded-full bg-brand-gray flex items-center justify-center text-xl text-brand-light font-light group-hover:bg-brand-light group-hover:text-brand-dark transition-colors">04</div>
+                            <div>
+                                <h3 class="break-words text-xl font-medium tracking-tight mb-3">AI Marketing</h3>
+                                <p class="text-gray-400 font-light text-sm leading-relaxed">Targeted ad copy, campaign visuals, and smart creatives that adapt dynamically to your audience.</p>
+                            </div>
+                        </div>
+
+                        <!-- Service Card -->
+                        <div class="flex flex-col gap-6 p-8 border border-brand-border rounded-xl group hover:border-gray-500 transition-all duration-300 fade-up hover:-translate-y-1">
+                            <div class="w-12 h-12 rounded-full bg-brand-gray flex items-center justify-center text-xl text-brand-light font-light group-hover:bg-brand-light group-hover:text-brand-dark transition-colors">05</div>
+                            <div>
+                                <h3 class="break-words text-xl font-medium tracking-tight mb-3">Social Media Automation</h3>
+                                <p class="text-gray-400 font-light text-sm leading-relaxed">Intelligent AI captions, posting automation, trend detection, and long-term content planning.</p>
+                            </div>
+                        </div>
+
+                        <!-- Service Card -->
+                        <div class="flex flex-col gap-6 p-8 border border-brand-border rounded-xl group hover:border-gray-500 transition-all duration-300 fade-up hover:-translate-y-1">
+                            <div class="w-12 h-12 rounded-full bg-brand-gray flex items-center justify-center text-xl text-brand-light font-light group-hover:bg-brand-light group-hover:text-brand-dark transition-colors">06</div>
+                            <div>
+                                <h3 class="break-words text-xl font-medium tracking-tight mb-3">Custom AI Models</h3>
+                                <p class="text-gray-400 font-light text-sm leading-relaxed">Tailored AI avatars, conversational chatbots, and branded media generators trained on your data.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Package Details (One-off) -->
+            <section class="w-full px-6 py-16 md:py-24 bg-brand-dark border-t border-brand-border">
+                <div class="max-w-7xl mx-auto flex flex-col gap-16">
+                    <div class="flex gap-4 text-[10px] font-semibold uppercase tracking-widest text-gray-500 fade-up">
+                        <span>(02)</span><span>(Project Details)</span>
+                    </div>
+
+                    <div class="flex flex-col border-t border-brand-border fade-up">
+                        
+                        <div class="flex flex-col md:flex-row md:items-center justify-between py-8 border-b border-brand-border group hover:pl-4 transition-all duration-300 gap-4">
+                            <div class="flex flex-col gap-2">
+                                <span class="text-2xl font-medium tracking-tight">3D (Festivals)</span>
+                                <span class="text-xs font-semibold uppercase tracking-widest text-gray-500">Duration: Below 30 sec</span>
+                            </div>
+                            <div class="flex items-center gap-8">
+                                <a href="#" class="text-[10px] font-semibold uppercase tracking-widest underline underline-offset-4 text-gray-400 hover:text-brand-light">View Example</a>
+                                <span class="text-3xl font-medium">₹2,500</span>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col md:flex-row md:items-center justify-between py-8 border-b border-brand-border group hover:pl-4 transition-all duration-300 gap-4">
+                            <div class="flex flex-col gap-2">
+                                <span class="text-2xl font-medium tracking-tight">3D (Without voice-over)</span>
+                                <span class="text-xs font-semibold uppercase tracking-widest text-gray-500">Duration: Below 30 sec</span>
+                            </div>
+                            <div class="flex items-center gap-8">
+                                <a href="#" class="text-[10px] font-semibold uppercase tracking-widest underline underline-offset-4 text-gray-400 hover:text-brand-light">View Example</a>
+                                <span class="text-3xl font-medium">₹5,000</span>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col md:flex-row md:items-center justify-between py-8 border-b border-brand-border group hover:pl-4 transition-all duration-300 gap-4">
+                            <div class="flex flex-col gap-2">
+                                <span class="text-2xl font-medium tracking-tight">3D (Voice-over)</span>
+                                <span class="text-xs font-semibold uppercase tracking-widest text-gray-500">Duration: Below 1 min</span>
+                            </div>
+                            <div class="flex items-center gap-8">
+                                <a href="#" class="text-[10px] font-semibold uppercase tracking-widest underline underline-offset-4 text-gray-400 hover:text-brand-light">View Example</a>
+                                <span class="text-3xl font-medium">₹6,000</span>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col md:flex-row md:items-center justify-between py-8 border-b border-brand-border group hover:pl-4 transition-all duration-300 gap-4">
+                            <div class="flex flex-col gap-2">
+                                <span class="text-2xl font-medium tracking-tight">Realistic (Without voice-over)</span>
+                                <span class="text-xs font-semibold uppercase tracking-widest text-gray-500">Duration: Below 1 min</span>
+                            </div>
+                            <div class="flex items-center gap-8">
+                                <a href="#" class="text-[10px] font-semibold uppercase tracking-widest underline underline-offset-4 text-gray-400 hover:text-brand-light">View Example</a>
+                                <span class="text-3xl font-medium">₹8,000</span>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col md:flex-row md:items-center justify-between py-8 border-b border-brand-border group hover:pl-4 transition-all duration-300 gap-4">
+                            <div class="flex flex-col gap-2">
+                                <span class="text-2xl font-medium tracking-tight">Realistic (Voice-over)</span>
+                                <span class="text-xs font-semibold uppercase tracking-widest text-gray-500">Duration: Below 1 min</span>
+                            </div>
+                            <div class="flex items-center gap-8">
+                                <a href="#" class="text-[10px] font-semibold uppercase tracking-widest underline underline-offset-4 text-gray-400 hover:text-brand-light">View Example</a>
+                                <span class="text-3xl font-medium">₹12,000</span>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col md:flex-row md:items-center justify-between py-8 border-b border-brand-border group hover:pl-4 transition-all duration-300 gap-4">
+                            <div class="flex flex-col gap-2">
+                                <span class="text-2xl font-medium tracking-tight">Realistic (Script + voice-over)</span>
+                                <span class="text-xs font-semibold uppercase tracking-widest text-gray-500">Duration: 2 min</span>
+                            </div>
+                            <div class="flex items-center gap-8">
+                                <a href="#" class="text-[10px] font-semibold uppercase tracking-widest underline underline-offset-4 text-gray-400 hover:text-brand-light">View Example</a>
+                                <span class="text-3xl font-medium">₹25,000</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Monthly Packages -->
+            <section class="w-full px-6 py-16 md:py-24 bg-brand-dark border-t border-brand-border">
+                <div class="max-w-7xl mx-auto flex flex-col gap-16">
+                    <div class="flex flex-col gap-4 fade-up">
+                        <div class="flex gap-4 text-[10px] font-semibold uppercase tracking-widest text-gray-500">
+                            <span>(03)</span><span>(Monthly Subscriptions)</span>
+                        </div>
+                        <p class="text-gray-400 font-light max-w-2xl mt-4">
+                            Ongoing AI content production, billed monthly under a 6-month agreement. Perfect for consistent branding and social growth.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        
+                        <!-- Package 1 -->
+                        <div class="flex flex-col p-8 border border-brand-border rounded-xl bg-brand-gray/20 hover:bg-brand-gray/50 transition-colors fade-up group">
+                            <h3 class="break-words text-xl font-medium tracking-tight">Festival Wishes</h3>
+                            <p class="text-gray-400 text-xs mt-2 h-10">Includes all festival wishes, depending on the trend.</p>
+                            
+                            <div class="flex flex-col gap-2 my-8 text-sm font-light">
+                                <div class="flex justify-between border-b border-brand-border/50 pb-2">
+                                    <span class="text-gray-500">Duration</span>
+                                    <span>Below 30 sec</span>
+                                </div>
+                                <div class="flex justify-between border-b border-brand-border/50 pb-2">
+                                    <span class="text-gray-500">Quantity</span>
+                                    <span>4 Videos</span>
+                                </div>
+                            </div>
+
+                            <div class="mt-auto flex flex-col gap-6">
+                                <div class="flex items-end gap-1">
+                                    <span class="text-4xl font-semibold tracking-tight">₹8,000</span>
+                                    <span class="text-xs text-gray-500 mb-1">/ mo</span>
+                                </div>
+                                <a href="contact.html" class="w-full py-4 text-center border border-brand-border rounded-full text-[10px] font-semibold uppercase tracking-widest hover:bg-brand-light hover:text-brand-dark transition-colors">
+                                    Get Started
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Package 2 -->
+                        <div class="flex flex-col p-8 border border-brand-border rounded-xl bg-brand-gray/20 hover:bg-brand-gray/50 transition-colors fade-up group">
+                            <h3 class="break-words text-xl font-medium tracking-tight">Advertisement (30s)</h3>
+                            <p class="text-gray-400 text-xs mt-2 h-10">Includes music or voice-over, depending on the trend.</p>
+                            
+                            <div class="flex flex-col gap-2 my-8 text-sm font-light">
+                                <div class="flex justify-between border-b border-brand-border/50 pb-2">
+                                    <span class="text-gray-500">Duration</span>
+                                    <span>Below 30 sec</span>
+                                </div>
+                                <div class="flex justify-between border-b border-brand-border/50 pb-2">
+                                    <span class="text-gray-500">Quantity</span>
+                                    <span>4 Videos</span>
+                                </div>
+                            </div>
+
+                            <div class="mt-auto flex flex-col gap-6">
+                                <div class="flex items-end gap-1">
+                                    <span class="text-4xl font-semibold tracking-tight">₹15,000</span>
+                                    <span class="text-xs text-gray-500 mb-1">/ mo</span>
+                                </div>
+                                <a href="contact.html" class="w-full py-4 text-center border border-brand-border rounded-full text-[10px] font-semibold uppercase tracking-widest hover:bg-brand-light hover:text-brand-dark transition-colors">
+                                    Get Started
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Package 3 (Best Value) -->
+                        <div class="flex flex-col p-8 border border-brand-light rounded-xl bg-brand-light text-brand-dark fade-up group relative transform -translate-y-2 shadow-2xl">
+                            <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-brand-dark text-brand-light text-[9px] font-bold uppercase tracking-widest px-4 py-1 rounded-full">
+                                Best Value
+                            </div>
+                            <h3 class="break-words text-xl font-medium tracking-tight">Advertisement (1m)</h3>
+                            <p class="text-gray-600 text-xs mt-2 h-10">Includes music or voice-over, depending on the trend.</p>
+                            
+                            <div class="flex flex-col gap-2 my-8 text-sm font-medium">
+                                <div class="flex justify-between border-b border-brand-dark/20 pb-2">
+                                    <span class="text-gray-600">Duration</span>
+                                    <span>Below 1 min</span>
+                                </div>
+                                <div class="flex justify-between border-b border-brand-dark/20 pb-2">
+                                    <span class="text-gray-600">Quantity</span>
+                                    <span>4 Videos</span>
+                                </div>
+                            </div>
+
+                            <div class="mt-auto flex flex-col gap-6">
+                                <div class="flex items-end gap-1">
+                                    <span class="text-4xl font-semibold tracking-tight">₹20,000</span>
+                                    <span class="text-xs text-gray-600 mb-1">/ mo</span>
+                                </div>
+                                <a href="contact.html" class="w-full py-4 text-center bg-brand-dark text-brand-light rounded-full text-[10px] font-semibold uppercase tracking-widest hover:bg-gray-800 transition-colors">
+                                    Get Started
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Package 4 -->
+                        <div class="flex flex-col p-8 border border-brand-border rounded-xl bg-brand-gray/20 hover:bg-brand-gray/50 transition-colors fade-up group">
+                            <h3 class="break-words text-xl font-medium tracking-tight">Advertisement (2m)</h3>
+                            <p class="text-gray-400 text-xs mt-2 h-10">Includes music or voice-over, depending on the trend.</p>
+                            
+                            <div class="flex flex-col gap-2 my-8 text-sm font-light">
+                                <div class="flex justify-between border-b border-brand-border/50 pb-2">
+                                    <span class="text-gray-500">Duration</span>
+                                    <span>2 minutes</span>
+                                </div>
+                                <div class="flex justify-between border-b border-brand-border/50 pb-2">
+                                    <span class="text-gray-500">Quantity</span>
+                                    <span>4 Videos</span>
+                                </div>
+                            </div>
+
+                            <div class="mt-auto flex flex-col gap-6">
+                                <div class="flex items-end gap-1">
+                                    <span class="text-4xl font-semibold tracking-tight">₹75,000</span>
+                                    <span class="text-xs text-gray-500 mb-1">/ mo</span>
+                                </div>
+                                <a href="contact.html" class="w-full py-4 text-center border border-brand-border rounded-full text-[10px] font-semibold uppercase tracking-widest hover:bg-brand-light hover:text-brand-dark transition-colors">
+                                    Get Started
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Important Notes -->
+            <section class="w-full px-6 py-12 bg-brand-dark border-t border-brand-border">
+                <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 bg-brand-gray/20 p-8 rounded-xl fade-up">
+                    <div class="md:w-1/4">
+                        <h4 class="text-[10px] font-semibold uppercase tracking-widest text-brand-light">Important Note</h4>
+                    </div>
+                    <div class="md:w-3/4">
+                        <ul class="text-sm text-gray-400 font-light leading-relaxed list-disc pl-4 flex flex-col gap-3 marker:text-gray-600">
+                            <li>AI has certain limitations, so perfect accuracy and detailing may not always be achievable, especially for complex tasks.</li>
+                            <li>For pre-planned faces, accuracy may be limited to around 80%.</li>
+                            <li>Once the script is confirmed, no further changes will be accepted in the script or voice-over.</li>
+                            <li>Any last-minute changes or additions not discussed in advance will incur an extra charge of ₹1,000 per scene. (Premium package includes 2 free scene edits.)</li>
+                            <li>For voice-over edits, premium packages will be charged ₹5,000, while other packages will incur extra charges based on the package amount.</li>
+                            <li>An advance payment of 20% of the total amount is required, with the remaining 80% payable after script approval.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full bg-brand-light text-brand-dark px-6 py-12 md:py-16 md:py-24 mt-20">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-end gap-12">
+            <div class="flex flex-col gap-6">
+                <h2 class="break-words text-2xl sm:text-3xl md:text-5xl break-words font-medium tracking-tight">Let's work together</h2>
+                <a href="mailto:contact@xen-ai.com" class="text-lg md:text-xl hover:underline underline-offset-8 font-medium">contact@xen-ai.com</a>
+                <a href="contact.html" class="mt-4 inline-flex items-center gap-2 border border-brand-dark px-6 py-3 rounded-full hover:bg-brand-dark hover:text-brand-light transition-colors w-max font-semibold uppercase text-[10px] tracking-widest">
+                    Contact Now
+                </a>
+            </div>
+            <div class="flex flex-col items-start md:items-end gap-12">
+                <nav class="flex flex-wrap gap-6 text-[10px] font-semibold uppercase tracking-widest">
+                    <a href="index.html" class="hover:opacity-50 transition-opacity">Home <span class="text-gray-400 ml-1">01</span></a>
+                    <a href="portfolio.html" class="hover:opacity-50 transition-opacity">Portfolio <span class="text-gray-400 ml-1">02</span></a>
+                    <a href="about.html" class="hover:opacity-50 transition-opacity">About <span class="text-gray-400 ml-1">03</span></a>
+                    <a href="services.html" class="hover:opacity-50 transition-opacity">Services <span class="text-gray-400 ml-1">04</span></a>
+                    <a href="contact.html" class="hover:opacity-50 transition-opacity">Contact <span class="text-gray-400 ml-1">05</span></a>
+                </nav>
+                <div class="flex items-center gap-8 text-gray-500 text-[10px] font-semibold uppercase tracking-widest">
+                    <p>&copy; 2025 XEN-AI</p>
+                    <p>19'</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/services.js"></script>
+</body>
+</html>

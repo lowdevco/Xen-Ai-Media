@@ -1,0 +1,14 @@
+/* index.css - Homepage Specific Styles */
+
+/* 
+  Initial states for GSAP animations can go here.
+  For example, hiding elements before GSAP fades them in.
+*/
+
+.hero-content {
+    visibility: hidden; /* GSAP will handle showing this */
+}
+
+.hero-bg {
+    scale: 1.1; /* GSAP will scale this down */
+}

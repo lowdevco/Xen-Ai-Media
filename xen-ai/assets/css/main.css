@@ -1,0 +1,21 @@
+/* main.css - Global Styles */
+
+/* Hide scrollbar globally but allow scrolling */
+::-webkit-scrollbar {
+    display: none;
+}
+html {
+    scrollbar-width: none;
+}
+
+/* Base resets that Tailwind doesn't cover */
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Utility for text-stroke if needed later */
+.text-stroke {
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
+    color: transparent;
+}

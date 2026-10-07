@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XEN-AI - Portfolio</title>
+    <link rel="icon" href="data:,">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+            --font-sans: "Montserrat", sans-serif;
+            --color-brand-dark: #0a0a0a;
+            --color-brand-light: #ffffff;
+            --color-brand-gray: #1a1a1a;
+            --color-brand-border: #2a2a2a;
+        }
+    </style>
+    
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body class="bg-brand-dark text-brand-light font-sans antialiased overflow-x-hidden selection:bg-brand-light selection:text-brand-dark">
+
+    <!-- Navbar -->
+    <header class="fixed top-0 left-0 w-full z-50 px-6 py-4 flex justify-between items-center mix-blend-difference">
+        <a href="index.html" class="text-lg font-semibold uppercase tracking-widest flex items-center gap-2 z-[60]">
+            <img src="assets/img/image(23).png" alt="Logo" class="w-6 h-6 object-contain invert opacity-80">
+            XEN-AI
+        </a>
+        <nav class="hidden md:flex items-center gap-8 text-[10px] font-semibold uppercase tracking-widest">
+            <a href="index.html" class="flex gap-2 items-center hover:opacity-50 transition-opacity"><span>Home</span><span class="text-[9px] text-gray-500">01</span></a>
+            <a href="portfolio.html" class="flex gap-2 items-center hover:opacity-50 transition-opacity"><span>Portfolio</span><span class="text-[9px] text-gray-500">02</span></a>
+            <a href="about.html" class="flex gap-2 items-center hover:opacity-50 transition-opacity"><span>About</span><span class="text-[9px] text-gray-500">03</span></a>
+            <a href="services.html" class="flex gap-2 items-center hover:opacity-50 transition-opacity"><span>Services</span><span class="text-[9px] text-gray-500">04</span></a>
+            <a href="contact.html" class="flex gap-2 items-center hover:opacity-50 transition-opacity"><span>Contact</span><span class="text-[9px] text-gray-500">05</span></a>
+        </nav>
+        <div class="flex items-center gap-4 z-[60]">
+            <a href="contact.html" class="hidden lg:flex items-center gap-3 bg-brand-light text-brand-dark px-6 py-2.5 rounded-full hover:bg-gray-200 transition-colors">
+                <span class="text-[10px] font-semibold uppercase tracking-wider">Contact</span>
+            </a>
+            <button id="mobile-menu-btn" class="md:hidden flex flex-col justify-center items-center gap-[6px] w-10 h-10 z-[60] focus:outline-none">
+                <span class="w-6 h-[1px] bg-brand-light transition-all duration-300"></span>
+                <span class="w-6 h-[1px] bg-brand-light transition-all duration-300"></span>
+            </button>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu-overlay" class="absolute top-[100%] right-6 mt-4 w-[240px] bg-[#121212] border border-[#2a2a2a] rounded-2xl flex flex-col items-center gap-6 py-8 opacity-0 pointer-events-none transition-all duration-300 z-50 shadow-2xl translate-y-[-10px]">
+            <a href="index.html" class="text-[11px] font-semibold uppercase tracking-widest hover:text-gray-400 transition-colors">Home</a>
+            <a href="portfolio.html" class="text-[11px] font-semibold uppercase tracking-widest hover:text-gray-400 transition-colors">Portfolio</a>
+            <a href="about.html" class="text-[11px] font-semibold uppercase tracking-widest hover:text-gray-400 transition-colors">About</a>
+            <a href="services.html" class="text-[11px] font-semibold uppercase tracking-widest hover:text-gray-400 transition-colors">Services</a>
+            <a href="contact.html" class="text-[10px] font-semibold uppercase tracking-widest text-brand-dark bg-brand-light px-6 py-2.5 rounded-full hover:bg-gray-300 transition-colors mt-2">Contact</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="smooth-wrapper">
+        <div id="smooth-content">
+            
+            <!-- Hero Section -->
+            <section class="w-full pt-40 pb-12 px-6 bg-brand-dark">
+                <div class="max-w-7xl mx-auto flex flex-col gap-12">
+                    <div class="flex justify-between items-start text-[10px] font-semibold uppercase tracking-widest text-gray-500 fade-up">
+                        <span>Latest</span><span>(07)</span><span>Portfolio</span>
+                    </div>
+                    <h1 class="break-words text-2xl sm:text-3xl md:text-5xl break-words lg:text-7xl font-medium tracking-tight leading-[1.1] max-w-4xl text-reveal">
+                        A curated collection of structured visuals and modern digital systems.
+                    </h1>
+                    
+                    <!-- Filter Bar -->
+                    <div class="flex flex-wrap items-center gap-6 mt-8 fade-up border-b border-brand-border pb-4">
+                        <button class="filter-btn active text-xs font-semibold uppercase tracking-widest text-brand-light transition-colors" data-filter="all">All Works</button>
+                        <button class="filter-btn text-xs font-semibold uppercase tracking-widest text-gray-500 hover:text-brand-light transition-colors" data-filter="image">Images</button>
+                        <button class="filter-btn text-xs font-semibold uppercase tracking-widest text-gray-500 hover:text-brand-light transition-colors" data-filter="video">Video</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Portfolio Grid -->
+            <section class="w-full px-6 py-12 bg-brand-dark">
+                <div class="max-w-7xl mx-auto">
+                    <div class="columns-1 md:columns-2 gap-12" id="portfolio-grid">
+                        
+                        <!-- Work 1 (Image - Portrait) -->
+                        <div class="work-item break-inside-avoid mb-24 w-full" data-category="image">
+                            <a href="#" class="group flex flex-col gap-6">
+                                <div class="w-full aspect-[4/5] overflow-hidden rounded-lg relative">
+                                    <img src="assets/img/image(44).png" alt="Vellfire Calibration" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                                </div>
+                                <div class="flex justify-between items-center border-t border-brand-border pt-4 px-2">
+                                    <h3 class="break-words text-2xl font-semibold uppercase tracking-tight">Vellfire Calibration</h3>
+                                    <span class="text-[10px] font-semibold uppercase tracking-widest text-gray-500">Image</span>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <!-- Work 3 (Image - Portrait) -->
+                        <div class="work-item break-inside-avoid mb-24 w-full" data-category="image">
+                            <a href="#" class="group flex flex-col gap-6">
+                                <div class="w-full aspect-[4/5] overflow-hidden rounded-lg relative">
+                                    <img src="assets/img/image(5).png" alt="Noara Willis" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                                </div>
+                                <div class="flex justify-between items-center border-t border-brand-border pt-4 px-2">
+                                    <h3 class="break-words text-2xl font-semibold uppercase tracking-tight">Noara Willis</h3>
+                                    <span class="text-[10px] font-semibold uppercase tracking-widest text-gray-500">Image</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Work 2 (Video - Landscape) -->
+                        <div class="work-item break-inside-avoid mb-24 w-full" data-category="video">
+                            <a href="#" class="group flex flex-col gap-6">
+                                <div class="w-full aspect-video overflow-hidden rounded-lg relative">
+                                    <div class="absolute inset-0 z-20 flex justify-center items-center opacity-80 group-hover:opacity-100 transition-opacity group-hover:scale-110 duration-500">
+                                        <div class="w-20 h-20 bg-black/40 backdrop-blur-md rounded-full flex justify-center items-center border border-white/20">
+                                            <div class="w-0 h-0 border-t-[8px] border-t-transparent border-l-[14px] border-l-white border-b-[8px] border-b-transparent ml-1"></div>
+                                        </div>
+                                    </div>
+                                    <img src="assets/img/image(20).png" alt="Dunwill Lanson" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                                </div>
+                                <div class="flex justify-between items-center border-t border-brand-border pt-4 px-2">
+                                    <h3 class="break-words text-2xl font-semibold uppercase tracking-tight">Dunwill Lanson</h3>
+                                    <span class="text-[10px] font-semibold uppercase tracking-widest text-brand-light">Video</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Work 4 (Video - Landscape) -->
+                        <div class="work-item break-inside-avoid mb-24 w-full" data-category="video">
+                            <a href="#" class="group flex flex-col gap-6">
+                                <div class="w-full aspect-video overflow-hidden rounded-lg relative">
+                                    <div class="absolute inset-0 z-20 flex justify-center items-center opacity-80 group-hover:opacity-100 transition-opacity group-hover:scale-110 duration-500">
+                                        <div class="w-20 h-20 bg-black/40 backdrop-blur-md rounded-full flex justify-center items-center border border-white/20">
+                                            <div class="w-0 h-0 border-t-[8px] border-t-transparent border-l-[14px] border-l-white border-b-[8px] border-b-transparent ml-1"></div>
+                                        </div>
+                                    </div>
+                                    <img src="assets/img/image(39).png" alt="Nike Studios" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                                </div>
+                                <div class="flex justify-between items-center border-t border-brand-border pt-4 px-2">
+                                    <h3 class="break-words text-2xl font-semibold uppercase tracking-tight">Nike Studios</h3>
+                                    <span class="text-[10px] font-semibold uppercase tracking-widest text-brand-light">Video</span>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ Section -->
+            <section class="w-full px-6 py-20 md:py-32 border-t border-brand-border bg-brand-dark">
+                <div class="max-w-4xl mx-auto">
+                    <div class="flex justify-between items-start text-[10px] font-semibold uppercase tracking-widest text-gray-500 mb-16 fade-up">
+                        <span>(02)</span><span>(Frequently Asked Questions)</span><span>&copy; 2025</span>
+                    </div>
+
+                    <div class="flex flex-col gap-2">
+                        <details class="group border-b border-brand-border pb-6 pt-6 fade-up cursor-pointer">
+                            <summary class="flex justify-between items-center gap-4 font-medium text-lg md:text-2xl list-none hover:text-gray-300 transition-colors">
+                                What distinguishes us from other agencies?
+                                <span class="text-3xl font-light group-open:rotate-45 transition-transform duration-300">+</span>
+                            </summary>
+                            <p class="mt-6 text-gray-400 text-sm leading-relaxed font-light pr-12">
+                                We combine high-end aesthetic design with rigorous strategic thinking. Instead of bloated teams, you work directly with senior creatives who execute rapidly without compromising quality.
+                            </p>
+                        </details>
+                        <details class="group border-b border-brand-border pb-6 pt-6 fade-up cursor-pointer">
+                            <summary class="flex justify-between items-center gap-4 font-medium text-lg md:text-2xl list-none hover:text-gray-300 transition-colors">
+                                Why not hire an in-house designer or freelancer?
+                                <span class="text-3xl font-light group-open:rotate-45 transition-transform duration-300">+</span>
+                            </summary>
+                            <p class="mt-6 text-gray-400 text-sm leading-relaxed font-light pr-12">
+                                Hiring a senior designer can cost upwards of $100k+/year plus benefits. With Xen-AI, you get premium agency quality on-demand, scaling up or down exactly as you need.
+                            </p>
+                        </details>
+                        <details class="group border-b border-brand-border pb-6 pt-6 fade-up cursor-pointer">
+                            <summary class="flex justify-between items-center gap-4 font-medium text-lg md:text-2xl list-none hover:text-gray-300 transition-colors">
+                                Are creative requests truly unlimited?
+                                <span class="text-3xl font-light group-open:rotate-45 transition-transform duration-300">+</span>
+                            </summary>
+                            <p class="mt-6 text-gray-400 text-sm leading-relaxed font-light pr-12">
+                                Yes. Once subscribed, you can add as many design requests to your queue as you'd like. They will be delivered one by one.
+                            </p>
+                        </details>
+                        <details class="group border-b border-brand-border pb-6 pt-6 fade-up cursor-pointer">
+                            <summary class="flex justify-between items-center gap-4 font-medium text-lg md:text-2xl list-none hover:text-gray-300 transition-colors">
+                                How fast will I receive my work?
+                                <span class="text-3xl font-light group-open:rotate-45 transition-transform duration-300">+</span>
+                            </summary>
+                            <p class="mt-6 text-gray-400 text-sm leading-relaxed font-light pr-12">
+                                On average, most standard requests are completed in just two days or less.
+                            </p>
+                        </details>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Infinite Marquee -->
+            <section class="w-full py-8 border-t border-b border-brand-border overflow-hidden bg-brand-dark flex items-center">
+                <div class="marquee-content flex gap-8 whitespace-nowrap text-2xl sm:text-3xl md:text-5xl break-words font-medium uppercase tracking-tight text-brand-light opacity-90">
+                    <span>We Are Faster, Better And Cheaper</span>
+                    <span class="text-brand-dark" style="-webkit-text-stroke: 1px white;">*</span>
+                    <span>Contact Now</span>
+                    <span class="text-brand-dark" style="-webkit-text-stroke: 1px white;">*</span>
+                    <span>We Are Faster, Better And Cheaper</span>
+                    <span class="text-brand-dark" style="-webkit-text-stroke: 1px white;">*</span>
+                    <span>Contact Now</span>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full bg-brand-light text-brand-dark px-6 py-12 md:py-16 md:py-24">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-end gap-12">
+            <div class="flex flex-col gap-6">
+                <h2 class="break-words text-2xl sm:text-3xl md:text-5xl break-words font-medium tracking-tight">Let's work together</h2>
+                <a href="mailto:contact@xen-ai.com" class="text-lg md:text-xl hover:underline underline-offset-8 font-medium">contact@xen-ai.com</a>
+                <a href="contact.html" class="mt-4 inline-flex items-center gap-2 border border-brand-dark px-6 py-3 rounded-full hover:bg-brand-dark hover:text-brand-light transition-colors w-max font-semibold uppercase text-[10px] tracking-widest">
+                    Contact Now
+                </a>
+            </div>
+            <div class="flex flex-col items-start md:items-end gap-12">
+                <nav class="flex flex-wrap gap-6 text-[10px] font-semibold uppercase tracking-widest">
+                    <a href="index.html" class="hover:opacity-50 transition-opacity">Home <span class="text-gray-400 ml-1">01</span></a>
+                    <a href="portfolio.html" class="hover:opacity-50 transition-opacity">Portfolio <span class="text-gray-400 ml-1">02</span></a>
+                    <a href="about.html" class="hover:opacity-50 transition-opacity">About <span class="text-gray-400 ml-1">03</span></a>
+                    <a href="services.html" class="hover:opacity-50 transition-opacity">Services <span class="text-gray-400 ml-1">04</span></a>
+                    <a href="contact.html" class="hover:opacity-50 transition-opacity">Contact <span class="text-gray-400 ml-1">05</span></a>
+                </nav>
+                <div class="flex items-center gap-8 text-gray-500 text-[10px] font-semibold uppercase tracking-widest">
+                    <p>&copy; 2025 XEN-AI</p>
+                    <p>19'</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/portfolio.js"></script>
+</body>
+</html>
