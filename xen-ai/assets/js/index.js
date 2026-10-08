@@ -4,12 +4,13 @@ document.addEventListener("DOMContentLoaded", () => {
     
     // 1. Initial Hero Fade In
     const tl = gsap.timeline();
+    gsap.set(".hero-content", { visibility: "visible" });
     
     tl.fromTo(".hero-content .text-reveal", 
         { y: 40, opacity: 0 },
         { y: 0, opacity: 1, duration: 1.2, ease: "power3.out", delay: 0.2 }
     )
-    .fromTo(".fade-up", 
+    .fromTo(".hero-content .fade-up, .hero-content.fade-up, header .fade-up", 
         { y: 20, opacity: 0 },
         { y: 0, opacity: 1, duration: 1, stagger: 0.15, ease: "power3.out" },
         "-=0.8"
@@ -30,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // 3. General Scroll Reveals
-    gsap.utils.toArray('section .fade-up, section .text-reveal').forEach(element => {
+    gsap.utils.toArray('section:not(.h-screen) .fade-up, section:not(.h-screen) .text-reveal').forEach(element => {
         gsap.fromTo(element, 
             { y: 40, opacity: 0 },
             { 

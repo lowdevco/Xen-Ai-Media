@@ -68,3 +68,20 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+// Accordion Exclusive Open Logic
+document.addEventListener('DOMContentLoaded', () => {
+    const accordions = document.querySelectorAll('details');
+    accordions.forEach(accordion => {
+        accordion.addEventListener('click', (e) => {
+            // Check if it's currently closed (meaning this click will open it)
+            if (!accordion.hasAttribute('open')) {
+                accordions.forEach(other => {
+                    if (other !== accordion && other.hasAttribute('open')) {
+                        other.removeAttribute('open');
+                    }
+                });
+            }
+        });
+    });
+});

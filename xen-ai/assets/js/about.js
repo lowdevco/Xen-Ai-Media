@@ -60,5 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
             ease: "linear"
         });
     }
-
+    
+    // 5. Initialize PureCounter
+    new PureCounter();
 });

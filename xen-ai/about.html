@@ -1,309 +1,697 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XEN-AI - About Us</title>
-    <link rel="icon" href="data:,">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Xen-Ai Media - About Us</title>
+    <link rel="icon" href="data:," />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <style type="text/tailwindcss">
-        @theme {
-            --font-sans: "Montserrat", sans-serif;
-            --color-brand-dark: #0a0a0a;
-            --color-brand-light: #ffffff;
-            --color-brand-gray: #1a1a1a;
-            --color-brand-border: #2a2a2a;
-        }
+      @theme {
+        --font-sans: "Montserrat", sans-serif;
+        --color-brand-dark: #0a0a0a;
+        --color-brand-light: #ffffff;
+        --color-brand-gray: #1a1a1a;
+        --color-brand-border: #2a2a2a;
+      }
     </style>
-    
-    <link rel="stylesheet" href="assets/css/main.css">
-</head>
-<body class="bg-brand-dark text-brand-light font-sans antialiased overflow-x-hidden selection:bg-brand-light selection:text-brand-dark">
 
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body
+    class="bg-brand-dark text-brand-light font-sans antialiased overflow-x-hidden selection:bg-brand-light selection:text-brand-dark"
+  >
     <!-- Navbar -->
-    <header class="fixed top-0 left-0 w-full z-50 px-6 py-4 flex justify-between items-center mix-blend-difference">
-        <a href="index.html" class="text-lg font-semibold uppercase tracking-widest flex items-center gap-2 z-[60]">
-            <img src="assets/img/image(23).png" alt="Logo" class="w-6 h-6 object-contain invert opacity-80">
-            XEN-AI
+    <header
+      class="fixed top-0 left-0 w-full z-50 px-6 py-4 flex justify-between items-center mix-blend-difference"
+    >
+      <a
+        href="index.html"
+        class="text-lg font-semibold uppercase tracking-widest flex items-center gap-2 z-[60]"
+      >
+        <img
+          src="assets/img/image(23).png"
+          alt="Logo"
+          class="w-6 h-6 object-contain invert opacity-80"
+        />
+        Xen-Ai Media
+      </a>
+      <nav
+        class="hidden md:flex items-center gap-8 text-[10px] font-semibold uppercase tracking-widest"
+      >
+        <a
+          href="index.html"
+          class="flex gap-2 items-center hover:opacity-50 transition-opacity"
+          ><span>Home</span><span class="text-[9px] text-gray-500">01</span></a
+        >
+        <a
+          href="portfolio.html"
+          class="flex gap-2 items-center hover:opacity-50 transition-opacity"
+          ><span>Portfolio</span
+          ><span class="text-[9px] text-gray-500">02</span></a
+        >
+        <a
+          href="about.html"
+          class="flex gap-2 items-center hover:opacity-50 transition-opacity"
+          ><span>About</span><span class="text-[9px] text-gray-500">03</span></a
+        >
+        <a
+          href="services.html"
+          class="flex gap-2 items-center hover:opacity-50 transition-opacity"
+          ><span>Services</span
+          ><span class="text-[9px] text-gray-500">04</span></a
+        >
+        <a
+          href="contact.html"
+          class="flex gap-2 items-center hover:opacity-50 transition-opacity"
+          ><span>Contact</span
+          ><span class="text-[9px] text-gray-500">05</span></a
+        >
+      </nav>
+      <div class="flex items-center gap-4 z-[60]">
+        <a
+          href="contact.html"
+          class="hidden lg:flex items-center gap-3 bg-brand-light text-brand-dark px-6 py-2.5 rounded-full hover:bg-gray-200 transition-colors"
+        >
+          <span class="text-[10px] font-semibold uppercase tracking-wider"
+            >Contact</span
+          >
         </a>
-        <nav class="hidden md:flex items-center gap-8 text-[10px] font-semibold uppercase tracking-widest">
-            <a href="index.html" class="flex gap-2 items-center hover:opacity-50 transition-opacity"><span>Home</span><span class="text-[9px] text-gray-500">01</span></a>
-            <a href="portfolio.html" class="flex gap-2 items-center hover:opacity-50 transition-opacity"><span>Portfolio</span><span class="text-[9px] text-gray-500">02</span></a>
-            <a href="about.html" class="flex gap-2 items-center hover:opacity-50 transition-opacity"><span>About</span><span class="text-[9px] text-gray-500">03</span></a>
-            <a href="services.html" class="flex gap-2 items-center hover:opacity-50 transition-opacity"><span>Services</span><span class="text-[9px] text-gray-500">04</span></a>
-            <a href="contact.html" class="flex gap-2 items-center hover:opacity-50 transition-opacity"><span>Contact</span><span class="text-[9px] text-gray-500">05</span></a>
-        </nav>
-        <div class="flex items-center gap-4 z-[60]">
-            <a href="contact.html" class="hidden lg:flex items-center gap-3 bg-brand-light text-brand-dark px-6 py-2.5 rounded-full hover:bg-gray-200 transition-colors">
-                <span class="text-[10px] font-semibold uppercase tracking-wider">Contact</span>
-            </a>
-            <button id="mobile-menu-btn" class="md:hidden flex flex-col justify-center items-center gap-[6px] w-10 h-10 z-[60] focus:outline-none">
-                <span class="w-6 h-[1px] bg-brand-light transition-all duration-300"></span>
-                <span class="w-6 h-[1px] bg-brand-light transition-all duration-300"></span>
-            </button>
-        </div>
+        <button
+          id="mobile-menu-btn"
+          class="md:hidden flex flex-col justify-center items-center gap-[6px] w-10 h-10 z-[60] focus:outline-none"
+        >
+          <span
+            class="w-6 h-[1px] bg-brand-light transition-all duration-300"
+          ></span>
+          <span
+            class="w-6 h-[1px] bg-brand-light transition-all duration-300"
+          ></span>
+        </button>
+      </div>
 
-        <!-- Mobile Dropdown Menu -->
-        <div id="mobile-menu-overlay" class="absolute top-[100%] right-6 mt-4 w-[240px] bg-[#121212] border border-[#2a2a2a] rounded-2xl flex flex-col items-center gap-6 py-8 opacity-0 pointer-events-none transition-all duration-300 z-50 shadow-2xl translate-y-[-10px]">
-            <a href="index.html" class="text-[11px] font-semibold uppercase tracking-widest hover:text-gray-400 transition-colors">Home</a>
-            <a href="portfolio.html" class="text-[11px] font-semibold uppercase tracking-widest hover:text-gray-400 transition-colors">Portfolio</a>
-            <a href="about.html" class="text-[11px] font-semibold uppercase tracking-widest hover:text-gray-400 transition-colors">About</a>
-            <a href="services.html" class="text-[11px] font-semibold uppercase tracking-widest hover:text-gray-400 transition-colors">Services</a>
-            <a href="contact.html" class="text-[10px] font-semibold uppercase tracking-widest text-brand-dark bg-brand-light px-6 py-2.5 rounded-full hover:bg-gray-300 transition-colors mt-2">Contact</a>
-        </div>
+      <!-- Mobile Dropdown Menu -->
+      <div
+        id="mobile-menu-overlay"
+        class="absolute top-[100%] right-6 mt-4 w-[240px] bg-[#121212] border border-[#2a2a2a] rounded-2xl flex flex-col items-center gap-6 py-8 opacity-0 pointer-events-none transition-all duration-300 z-50 shadow-2xl translate-y-[-10px]"
+      >
+        <a
+          href="index.html"
+          class="text-[11px] font-semibold uppercase tracking-widest hover:text-gray-400 transition-colors"
+          >Home</a
+        >
+        <a
+          href="portfolio.html"
+          class="text-[11px] font-semibold uppercase tracking-widest hover:text-gray-400 transition-colors"
+          >Portfolio</a
+        >
+        <a
+          href="about.html"
+          class="text-[11px] font-semibold uppercase tracking-widest hover:text-gray-400 transition-colors"
+          >About</a
+        >
+        <a
+          href="services.html"
+          class="text-[11px] font-semibold uppercase tracking-widest hover:text-gray-400 transition-colors"
+          >Services</a
+        >
+        <a
+          href="contact.html"
+          class="text-[10px] font-semibold uppercase tracking-widest text-brand-dark bg-brand-light px-6 py-2.5 rounded-full hover:bg-gray-300 transition-colors mt-2"
+          >Contact</a
+        >
+      </div>
     </header>
 
     <!-- Main Content -->
     <main id="smooth-wrapper">
-        <div id="smooth-content">
+      <div id="smooth-content">
+        <!-- Hero Section -->
+        <section
+          class="w-full pt-32 pb-12 md:pt-40 md:pb-20 px-6 bg-brand-dark"
+        >
+          <div class="max-w-7xl mx-auto flex flex-col gap-12">
+            <div
+              class="flex justify-between items-start text-[10px]  font-semibold uppercase tracking-widest text-gray-500 fade-up"
+            >
+              <span>We Are Here</span><span>(Our Studio)</span
+              ><span>About</span>
+            </div>
+
             
-            <!-- Hero Section -->
-            <section class="w-full pt-32 pb-12 md:pt-40 md:pb-20 px-6 bg-brand-dark">
-                <div class="max-w-7xl mx-auto flex flex-col gap-12">
-                    <div class="flex justify-between items-start text-[10px] font-semibold uppercase tracking-widest text-gray-500 fade-up">
-                        <span>We Are Here</span><span>(Our Studio)</span><span>About</span>
-                    </div>
-                    <h1 class="break-words text-2xl sm:text-3xl md:text-5xl break-words lg:text-7xl font-medium tracking-tight leading-[1.1] max-w-5xl text-reveal">
-                        One dedicated creative collective focused on your continuous stream of projects.
-                    </h1>
+              <div>
+                  <h2
+                    class="break-words text-center text-4xl md:text-5xl lg:text-7xl font-medium leading-[1.3] tracking-tight text-reveal mb-1"
+                  >
+                    Xen AI Media
+                  </h2>
+                  <p
+                    class="text-[10px] font-semibold text-center uppercase tracking-widest text-gray-500"
+                  >
+                    where creativity meets technology
+                  </p>
                 </div>
-            </section>
-
-            <!-- Image Break -->
-            <section class="w-full px-6 py-8 fade-up">
-                <div class="max-w-7xl mx-auto h-[60vh] md:h-[80vh] overflow-hidden rounded-lg relative">
-                    <img src="assets/img/image(48).jpeg" alt="Studio" class="w-full h-full object-cover" data-speed="0.8">
+                <div class="grid grid-cols-1 md:grid-cols-2 fade-up gap-5">
+                  <div>
+                    <p class="text-gray-400 text-md leading-relaxed font-light">
+                      Xen AI Media is a creative studio based in Sulthan
+                      Bathery, Wayanad, dedicated to producing visually engaging
+                      and innovative digital content. We specialize in AI
+                      powered videos, dynamic short form content, and modern
+                      visuals that reflect today’s fast moving digital world.
+                      Our goal is simple to help ideas take shape through
+                      storytelling and design. As a creative arm of Xeventure IT
+                      Solution, a well established tech company in Sulthan
+                      Bathery,
+                    </p>
+                  </div>
+                  <div>
+                    <p class="text-gray-400 text-md leading-relaxed font-light">
+                      we have the advantage of strong technical backing. This
+                      allows us to bring together design, media, and technology
+                      in a way that feels seamless and effective. Whether you're
+                      building a brand, launching a campaign, or looking to
+                      elevate your social media presence, Xen AI Media delivers
+                      fresh, future ready content that connects with your
+                      audience. Backed by the expertise and support of Xeventure
+                      IT Solution, we turn creativity into results.
+                    </p>
+                  </div>
                 </div>
-            </section>
 
-            <!-- Process Section -->
-            <section class="w-full px-6 py-16 md:py-24 bg-brand-dark border-t border-brand-border">
-                <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12 md:gap-16 lg:gap-24 relative">
-                    
-                    <!-- Left Side: Content -->
-                    <div class="lg:w-1/2 flex flex-col gap-16">
-                        <div class="flex flex-col gap-8 fade-up">
-                            <div class="flex gap-4 text-[10px] font-semibold uppercase tracking-widest text-gray-500">
-                                <span>(01)</span><span>(Process)</span>
-                            </div>
-                            <h2 class="break-words text-3xl font-medium leading-tight text-brand-light">
-                                Design-driven expression blends structured clarity and modern visual systems with Swiss digital ideas.
-                            </h2>
-                        </div>
+          </div>
+        </section>
 
-                        <div class="flex flex-col gap-16">
-                            <!-- Step 001 -->
-                            <div class="flex flex-col gap-6 border-b border-brand-border pb-12 fade-up">
-                                <span class="text-4xl font-light text-gray-500">001</span>
-                                <div class="flex flex-col gap-4">
-                                    <h3 class="break-words text-2xl font-semibold uppercase tracking-tight">Research</h3>
-                                    <p class="text-gray-400 font-light leading-relaxed">
-                                        Exploring insights through structured analysis and clear intention. We uncover patterns and direction, creating a grounded foundation that shapes purposeful design decisions.
-                                    </p>
-                                    <div class="mt-4 flex flex-col gap-2 text-sm font-medium uppercase tracking-widest text-brand-light">
-                                        <span class="text-[10px] text-gray-500 mb-2">What's included</span>
-                                        <span>Market discovery & visual mapping</span>
-                                        <span>Brand positioning review</span>
-                                        <span>Dedicated creative strategy</span>
-                                    </div>
-                                </div>
-                            </div>
+        <!-- Image Break -->
+        <section class="w-full px-6 py-8 fade-up">
+          <div
+            class="max-w-7xl mx-auto h-[60vh] md:h-[80vh] overflow-hidden rounded-lg relative"
+          >
+            <img
+              src="assets/img/image(48).jpeg"
+              alt="Studio"
+              class="w-full h-full object-cover"
+              data-speed="0.8"
+            />
+          </div>
+        </section>
 
-                            <!-- Step 002 -->
-                            <div class="flex flex-col gap-6 border-b border-brand-border pb-12 fade-up">
-                                <span class="text-4xl font-light text-gray-500">002</span>
-                                <div class="flex flex-col gap-4">
-                                    <h3 class="break-words text-2xl font-semibold uppercase tracking-tight">Experiment</h3>
-                                    <p class="text-gray-400 font-light leading-relaxed">
-                                        Translating ideas into visual concepts with clarity, balance, and exploration. We move beyond predictable form, crafting variations that reveal new creative possibilities.
-                                    </p>
-                                    <div class="mt-4 flex flex-col gap-2 text-sm font-medium uppercase tracking-widest text-brand-light">
-                                        <span class="text-[10px] text-gray-500 mb-2">What's included</span>
-                                        <span>Concept sketches & directions</span>
-                                        <span>Visual style development</span>
-                                        <span>Interactive prototyping</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Step 003 -->
-                            <div class="flex flex-col gap-6 fade-up">
-                                <span class="text-4xl font-light text-gray-500">003</span>
-                                <div class="flex flex-col gap-4">
-                                    <h3 class="break-words text-2xl font-semibold uppercase tracking-tight">Refinement</h3>
-                                    <p class="text-gray-400 font-light leading-relaxed">
-                                        Polishing every detail with precision and structure. We refine layout, tone, and expression, delivering a cohesive system shaped for clarity and long-term impact.
-                                    </p>
-                                    <div class="mt-4 flex flex-col gap-2 text-sm font-medium uppercase tracking-widest text-brand-light">
-                                        <span class="text-[10px] text-gray-500 mb-2">What's included</span>
-                                        <span>Final design adjustments</span>
-                                        <span>System-wide consistency check</span>
-                                        <span>Production handover</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Right Side: Sticky Image -->
-                    <div class="lg:w-1/2 relative hidden lg:block">
-                        <div class="sticky top-32 w-full aspect-[4/5] overflow-hidden rounded-lg fade-up">
-                            <img src="assets/img/image(40).jpg" alt="Creative Process" class="w-full h-full object-cover">
-                        </div>
-                    </div>
-
+        <!-- Process Section -->
+        <section
+          class="w-full px-6 py-16 md:py-24 bg-brand-light text-brand-dark border-t border-brand-dark/20"
+        >
+          <div
+            class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12 md:gap-16 lg:gap-24 relative"
+          >
+            <!-- Left Side: Content -->
+              <div class="lg:w-1/2 flex flex-col gap-16">
+                <div class="flex flex-col gap-8 fade-up">
+                  <div
+                    class="flex gap-4 text-[10px] font-semibold uppercase tracking-widest text-gray-500"
+                  >
+                    <span>(01)</span><span>(AI Video Process)</span>
+                  </div>
+                  <h2
+                    class="break-words text-3xl font-medium leading-tight text-brand-dark"
+                  >
+                    Blending creativity with technology to deliver futuristic media solutions through AI automation.
+                  </h2>
                 </div>
-            </section>
-
-            <!-- Capabilities Section -->
-            <section class="w-full px-6 py-16 md:py-24 bg-brand-dark border-t border-brand-border">
-                <div class="max-w-7xl mx-auto flex flex-col gap-16">
-                    <div class="flex justify-between items-start text-[10px] font-semibold uppercase tracking-widest text-gray-500 fade-up">
-                        <span>(02)</span><span>(Capabilities)</span><span>&copy; 2025</span>
+  
+                <div class="flex flex-col gap-16">
+                  <!-- Step 001 -->
+                  <div
+                    class="flex flex-col gap-6 border-b border-brand-dark/20 pb-12 fade-up"
+                  >
+                    <span class="text-4xl font-light text-gray-500">001</span>
+                    <div class="flex flex-col gap-4">
+                      <h3
+                        class="break-words text-2xl font-semibold uppercase tracking-tight"
+                      >
+                        AI-Powered Scriptwriting
+                      </h3>
+                      <p class="text-gray-600 font-light leading-relaxed">
+                        We generate video scripts, hooks, and ad copy using advanced language models trained specifically for narrative-driven storytelling and audience engagement.
+                      </p>
+                      <div
+                        class="mt-4 flex flex-col gap-2 text-sm font-medium uppercase tracking-widest text-brand-dark"
+                      >
+                        <span class="text-[10px] text-gray-500 mb-2"
+                          >What's included</span
+                        >
+                        <span>AI-Powered Scripting</span>
+                        <span>Brand positioning & tone</span>
+                        <span>Voiceover Generation</span>
+                      </div>
                     </div>
-
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                        
-                        <!-- Capability 1 -->
-                        <div class="flex flex-col gap-4 border-t border-brand-border pt-6 fade-up">
-                            <h3 class="break-words text-2xl font-medium uppercase tracking-tight">Strategy</h3>
-                            <p class="text-gray-400 font-light leading-relaxed mt-2">
-                                We lay the groundwork for digital success through comprehensive brand positioning, market research, and tone of voice development.
-                            </p>
-                        </div>
-
-                        <!-- Capability 2 -->
-                        <div class="flex flex-col gap-4 border-t border-brand-border pt-6 fade-up">
-                            <h3 class="break-words text-2xl font-medium uppercase tracking-tight">Design</h3>
-                            <p class="text-gray-400 font-light leading-relaxed mt-2">
-                                Crafting immersive experiences through UI/UX design, precise art direction, 3D visuals, and elegant typography systems.
-                            </p>
-                        </div>
-
-                        <!-- Capability 3 -->
-                        <div class="flex flex-col gap-4 border-t border-brand-border pt-6 fade-up">
-                            <h3 class="break-words text-2xl font-medium uppercase tracking-tight">Development</h3>
-                            <p class="text-gray-400 font-light leading-relaxed mt-2">
-                                Bringing designs to life with robust frontend engineering, WebGL interactions, creative coding, and seamless CMS integration.
-                            </p>
-                        </div>
-
+                  </div>
+  
+                  <!-- Step 002 -->
+                  <div
+                    class="flex flex-col gap-6 border-b border-brand-dark/20 pb-12 fade-up"
+                  >
+                    <span class="text-4xl font-light text-gray-500">002</span>
+                    <div class="flex flex-col gap-4">
+                      <h3
+                        class="break-words text-2xl font-semibold uppercase tracking-tight"
+                      >
+                        AI Video Production
+                      </h3>
+                      <p class="text-gray-600 font-light leading-relaxed">
+                        We craft stunning visual content using custom AI avatars, immersive scene generation, and dynamic virtual environments tailored to your brand.
+                      </p>
+                      <div
+                        class="mt-4 flex flex-col gap-2 text-sm font-medium uppercase tracking-widest text-brand-dark"
+                      >
+                        <span class="text-[10px] text-gray-500 mb-2"
+                          >What's included</span
+                        >
+                        <span>Custom AI Avatars</span>
+                        <span>Scene & Image Generation</span>
+                        <span>Immersive Virtual Environments</span>
+                      </div>
                     </div>
+                  </div>
+  
+                  <!-- Step 003 -->
+                  <div class="flex flex-col gap-6 fade-up">
+                    <span class="text-4xl font-light text-gray-500">003</span>
+                    <div class="flex flex-col gap-4">
+                      <h3
+                        class="break-words text-2xl font-semibold uppercase tracking-tight"
+                      >
+                        Automation & Polish
+                      </h3>
+                      <p class="text-gray-600 font-light leading-relaxed">
+                        The final cut is polished using auto-editing tools, smart creatives, and trend detection, delivering short-form content optimized for virality.
+                      </p>
+                      <div
+                        class="mt-4 flex flex-col gap-2 text-sm font-medium uppercase tracking-widest text-brand-dark"
+                      >
+                        <span class="text-[10px] text-gray-500 mb-2"
+                          >What's included</span
+                        >
+                        <span>Auto-Edited Reels & Shorts</span>
+                        <span>Trend-based Optimization</span>
+                        <span>Social Media Automation Ready</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-            </section>
+              </div>
 
-            <!-- Stats & Awards (Split Section) -->
-            <section class="w-full px-6 py-16 md:py-24 bg-brand-dark border-t border-brand-border">
-                <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24">
-                    
-                    <!-- Stats -->
-                    <div class="flex flex-col gap-12">
-                        <div class="flex gap-4 text-[10px] font-semibold uppercase tracking-widest text-gray-500 fade-up">
-                            <span>(03)</span><span>(Impact & Stats)</span>
-                        </div>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 md:gap-12 fade-up">
-                            <div class="flex flex-col gap-2">
-                                <h4 class="text-5xl font-medium tracking-tight">2.06M</h4>
-                                <span class="text-[10px] font-semibold uppercase tracking-widest text-gray-500">Global Impressions</span>
-                            </div>
-                            <div class="flex flex-col gap-2">
-                                <h4 class="text-5xl font-medium tracking-tight">160K</h4>
-                                <span class="text-[10px] font-semibold uppercase tracking-widest text-gray-500">Community Reach</span>
-                            </div>
-                            <div class="flex flex-col gap-2">
-                                <h4 class="text-5xl font-medium tracking-tight">750+</h4>
-                                <span class="text-[10px] font-semibold uppercase tracking-widest text-gray-500">Creative Hours Logged</span>
-                            </div>
-                            <div class="flex flex-col gap-2">
-                                <h4 class="text-5xl font-medium tracking-tight">257+</h4>
-                                <span class="text-[10px] font-semibold uppercase tracking-widest text-gray-500">Projects Completed</span>
-                            </div>
-                        </div>
-                    </div>
+            <!-- Right Side: Sticky Image -->
+            <div class="lg:w-1/2 relative hidden lg:block">
+              <div
+                class="sticky top-32 w-full aspect-[4/5] overflow-hidden rounded-lg fade-up"
+              >
+                <img
+                  src="assets/img/image(40).jpg"
+                  alt="Creative Process"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
 
-                    <!-- Select Clients -->
-                    <div class="flex flex-col gap-12">
-                        <div class="flex gap-4 text-[10px] font-semibold uppercase tracking-widest text-gray-500 fade-up">
-                            <span>(04)</span><span>(Select Clients)</span>
-                        </div>
-                        <div class="flex flex-col border-t border-brand-border fade-up">
-                            
-                            <div class="flex justify-between items-center py-6 border-b border-brand-border group hover:pl-4 transition-all duration-300">
-                                <span class="text-xl font-medium uppercase tracking-tight">Nike Studios</span>
-                                <span class="text-[10px] font-semibold uppercase tracking-widest text-gray-500">2025</span>
-                            </div>
+        <!-- Capabilities Section -->
+        <section
+          class="w-full px-6 py-16 md:py-24 bg-brand-dark border-t border-brand-border"
+        >
+          <div class="max-w-7xl mx-auto flex flex-col gap-16">
+            <div
+              class="flex justify-between items-start text-[10px] font-semibold uppercase tracking-widest text-gray-500 fade-up"
+            >
+              <span>(02)</span><span>(Capabilities)</span
+              ><span>&copy; 2026</span>
+            </div>
 
-                            <div class="flex justify-between items-center py-6 border-b border-brand-border group hover:pl-4 transition-all duration-300">
-                                <span class="text-xl font-medium uppercase tracking-tight">Lousiana KD6</span>
-                                <span class="text-[10px] font-semibold uppercase tracking-widest text-gray-500">2024</span>
-                            </div>
-
-                            <div class="flex justify-between items-center py-6 border-b border-brand-border group hover:pl-4 transition-all duration-300">
-                                <span class="text-xl font-medium uppercase tracking-tight">Vellfire</span>
-                                <span class="text-[10px] font-semibold uppercase tracking-widest text-gray-500">2024</span>
-                            </div>
-
-                            <div class="flex justify-between items-center py-6 border-b border-brand-border group hover:pl-4 transition-all duration-300">
-                                <span class="text-xl font-medium uppercase tracking-tight">Fuel Design</span>
-                                <span class="text-[10px] font-semibold uppercase tracking-widest text-gray-500">2023</span>
-                            </div>
-
-                        </div>
-                    </div>
-
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <!-- Capability 1 -->
+                <div
+                  class="flex flex-col gap-4 border-t border-brand-border pt-6 fade-up"
+                >
+                  <h3
+                    class="break-words text-2xl font-medium uppercase tracking-tight"
+                  >
+                    Script Writing
+                  </h3>
+                  <p class="text-gray-400 font-light leading-relaxed mt-2">
+                    Crafting compelling narratives and hooks tailored to your brand, leveraging both advanced AI models and our dedicated team of expert script writers.
+                  </p>
                 </div>
-            </section>
-
-            <!-- Infinite Marquee -->
-            <section class="w-full py-8 border-t border-b border-brand-border overflow-hidden bg-brand-dark flex items-center">
-                <div class="marquee-content flex gap-8 whitespace-nowrap text-2xl sm:text-3xl md:text-5xl break-words font-medium uppercase tracking-tight text-brand-light opacity-90">
-                    <span>We Are Faster, Better And Cheaper</span>
-                    <span class="text-brand-dark" style="-webkit-text-stroke: 1px white;">*</span>
-                    <span>Contact Now</span>
-                    <span class="text-brand-dark" style="-webkit-text-stroke: 1px white;">*</span>
-                    <span>We Are Faster, Better And Cheaper</span>
-                    <span class="text-brand-dark" style="-webkit-text-stroke: 1px white;">*</span>
-                    <span>Contact Now</span>
+  
+                <!-- Capability 2 -->
+                <div
+                  class="flex flex-col gap-4 border-t border-brand-border pt-6 fade-up"
+                >
+                  <h3
+                    class="break-words text-2xl font-medium uppercase tracking-tight"
+                  >
+                    AI Image Generation
+                  </h3>
+                  <p class="text-gray-400 font-light leading-relaxed mt-2">
+                    Producing stunning, hyper-realistic visuals, branding graphics, and conceptual art using cutting-edge generative AI tailored for maximum impact.
+                  </p>
                 </div>
-            </section>
+  
+                <!-- Capability 3 -->
+                <div
+                  class="flex flex-col gap-4 border-t border-brand-border pt-6 fade-up"
+                >
+                  <h3
+                    class="break-words text-2xl font-medium uppercase tracking-tight"
+                  >
+                    AI Video Generation
+                  </h3>
+                  <p class="text-gray-400 font-light leading-relaxed mt-2">
+                    Bringing concepts to life with fully AI-generated video production, featuring lifelike avatars, automated editing, and dynamic storytelling elements.
+                  </p>
+                </div>
+              </div>
+          </div>
+        </section>
 
-        </div>
+        <!-- Stats & Awards (Split Section) -->
+        <section
+          class="w-full px-6 py-16 md:py-24 bg-brand-dark border-t border-brand-border"
+        >
+          <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+            <!-- Stats -->
+            <div class="flex flex-col gap-12">
+              <div
+                class="flex gap-4 text-[10px] font-semibold uppercase tracking-widest text-gray-500 fade-up"
+              >
+                <span>(03)</span><span>(Impact & Stats)</span>
+              </div>
+              <div
+                class="grid grid-cols-1 sm:grid-cols-2 gap-8 md:gap-12 fade-up"
+              >
+                <div class="flex flex-col items-center text-center lg:items-start lg:text-left gap-2">
+                    <h4 class="text-5xl font-medium tracking-tight"><span class="purecounter" data-purecounter-start="0" data-purecounter-end="2.06" data-purecounter-decimals="2" data-purecounter-duration="2">0</span>M</h4>
+                  <span
+                    class="text-[10px] font-semibold uppercase tracking-widest text-gray-500"
+                    >Global Impressions</span
+                  >
+                </div>
+                <div class="flex flex-col items-center text-center lg:items-start lg:text-left gap-2">
+                    <h4 class="text-5xl font-medium tracking-tight"><span class="purecounter" data-purecounter-start="0" data-purecounter-end="5000" data-purecounter-duration="2">0</span>K</h4>
+                  <span
+                    class="text-[10px] font-semibold uppercase tracking-widest text-gray-500"
+                    >Community Reach</span
+                  >
+                </div>
+                <div class="flex flex-col items-center text-center lg:items-start lg:text-left gap-2">
+                    <h4 class="text-5xl font-medium tracking-tight"><span class="purecounter" data-purecounter-start="0" data-purecounter-end="750" data-purecounter-duration="2">0</span>+</h4>
+                  <span
+                    class="text-[10px] font-semibold uppercase tracking-widest text-gray-500"
+                    >Creative Hours Logged</span
+                  >
+                </div>
+                <div class="flex flex-col items-center text-center lg:items-start lg:text-left gap-2">
+                    <h4 class="text-5xl font-medium tracking-tight"><span class="purecounter" data-purecounter-start="0" data-purecounter-end="257" data-purecounter-duration="2">0</span>+</h4>
+                  <span
+                    class="text-[10px] font-semibold uppercase tracking-widest text-gray-500"
+                    >Projects Completed</span
+                    >
+                  </div>
+                  
+                </div>
+              </div>
+
+            <!-- Select Clients -->
+            <div class="flex flex-col gap-12">
+              <div
+                class="flex gap-4 text-[10px] font-semibold uppercase tracking-widest text-gray-500 fade-up"
+              >
+                <span>(04)</span><span>(Select Clients)</span>
+              </div>
+              <div class="flex flex-col border-t border-brand-border fade-up">
+
+                <div
+                  class="flex justify-between items-center py-6 border-b border-brand-border group hover:pl-4 transition-all duration-300"
+                >
+                  <span class="text-xl font-medium uppercase tracking-tight"
+                    >odyssia</span
+                  >
+                    <img src="assets/images/clients/odyssia.png" alt="Odyssia Logo" class="h-10 md:h-14 w-auto object-contain opacity-70 group-hover:opacity-100 transition-opacity">
+                </div>
+
+                <div
+                  class="flex justify-between items-center py-6 border-b border-brand-border group hover:pl-4 transition-all duration-300"
+                >
+                  <span class="text-xl font-medium uppercase tracking-tight"
+                    >LULU</span
+                  >
+                    <img src="assets/images/clients/lulu.png" alt="Lulu Logo" class="h-10 md:h-14 w-auto object-contain opacity-70 group-hover:opacity-100 transition-opacity">
+                </div>
+
+                <div
+                  class="flex justify-between items-center py-6 border-b border-brand-border group hover:pl-4 transition-all duration-300"
+                >
+                  <span class="text-xl font-medium uppercase tracking-tight"
+                    >Nesto</span
+                  >
+                    <img src="assets/images/clients/nesto.png" alt="Nesto Logo" class="h-10 md:h-14 w-auto object-contain opacity-70 group-hover:opacity-100 transition-opacity">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Xen Network Brands -->
+          <section
+            class="w-full py-16 md:py-24 border-t border-b border-brand-border bg-brand-dark flex flex-col items-center justify-center gap-16 md:gap-24"
+          >
+            <div class="flex flex-col items-center gap-4 fade-up px-6 text-center">
+              <span class="text-[10px] font-semibold uppercase tracking-widest text-gray-500">(Our Ecosystem)</span>
+              <h2 class="text-3xl md:text-5xl font-medium tracking-tight text-brand-light">Discover the Xen Network</h2>
+            </div>
+
+            <!-- 3 Logos: Medium - Big - Medium -->
+            <div class="max-w-5xl mx-auto w-full px-6 flex flex-col md:flex-row items-center justify-center gap-12 md:gap-24 fade-up">
+              
+              <!-- Brand 1 (Medium) -->
+              <a href="https://xeneducation.in/" target="_blank" class="group">
+                <img src="assets/images/company/xen-education.png" alt="Xen Education" class="h-20 md:h-28 scale-110 w-auto object-contain brightness-0 invert opacity-70 group-hover:opacity-100 transition-all duration-300">
+              </a>
+
+              <!-- Brand 2 (Big) -->
+              <a href="https://xeventure.com/" target="_blank" class="group">
+                <img src="assets/images/company/xeventure.svg" alt="Xeventure IT Solutions" class="h-16 md:h-20 scale-110 w-auto object-contain brightness-0 invert opacity-70 group-hover:opacity-100 transition-all duration-300">
+              </a>
+
+              <!-- Brand 3 (Medium) -->
+              <a href="https://xencodingacademy.com/" target="_blank" class="group">
+                <img src="assets/images/company/xen-coding-acadamy.png" alt="Xen Coding Acadamy" class="h-12 md:h-16 scale-90 w-auto object-contain brightness-0 invert opacity-70 group-hover:opacity-100 transition-all duration-300">
+              </a>
+
+            </div>
+          
+      </div>
     </main>
 
     <!-- Footer -->
-    <footer class="w-full bg-brand-light text-brand-dark px-6 py-12 md:py-16 md:py-24 mt-20">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-end gap-12">
+    <footer class="w-full bg-brand-light text-brand-dark px-6 py-8 md:py-12">
+      <div class="max-w-7xl mx-auto flex flex-col gap-8">
+        <!-- Top Section -->
+        <div
+          class="flex flex-col md:flex-row justify-between items-start gap-12 border-b border-brand-dark/20 pb-8"
+        >
+          <!-- Left: Logo & Talk -->
+          <div class="flex flex-col gap-8 md:w-1/2 lg:w-1/3">
+            <a
+              href="index.html"
+              class="text-2xl font-bold uppercase tracking-widest flex items-center gap-3"
+            >
+              <img
+                src="assets/img/image(23).png"
+                alt="Logo"
+                class="w-8 h-8 object-contain opacity-80"
+              />
+              XEN-AI
+            </a>
+
+            <div class="flex flex-col gap-2">
+              <span
+                class="text-[10px] font-semibold uppercase tracking-widest text-gray-500"
+                >Want to talk to us?</span
+              >
+              <a
+                href="mailto:info@xenaimedia.com"
+                class="text-2xl md:text-3xl font-medium hover:underline underline-offset-8 transition-all"
+                >info@xenaimedia.com</a
+              >
+            </div>
+          </div>
+
+          <!-- Right: Links Grid -->
+          <div
+            class="flex flex-row gap-12 md:gap-24 lg:w-1/2 justify-between md:justify-end w-full"
+          >
+            <!-- Menu -->
             <div class="flex flex-col gap-6">
-                <h2 class="break-words text-2xl sm:text-3xl md:text-5xl break-words font-medium tracking-tight">Let's work together</h2>
-                <a href="mailto:contact@xen-ai.com" class="text-lg md:text-xl hover:underline underline-offset-8 font-medium">contact@xen-ai.com</a>
-                <a href="contact.html" class="mt-4 inline-flex items-center gap-2 border border-brand-dark px-6 py-3 rounded-full hover:bg-brand-dark hover:text-brand-light transition-colors w-max font-semibold uppercase text-[10px] tracking-widest">
-                    Contact Now
+              <span
+                class="text-[10px] font-semibold uppercase tracking-widest text-gray-500"
+                >Menu</span
+              >
+              <nav class="flex flex-col gap-3 text-sm font-medium">
+                <a href="index.html" class="hover:opacity-50 transition-opacity"
+                  >Home</a
+                >
+                <a
+                  href="portfolio.html"
+                  class="hover:opacity-50 transition-opacity"
+                  >Works</a
+                >
+                <a href="about.html" class="hover:opacity-50 transition-opacity"
+                  >About</a
+                >
+                <a
+                  href="services.html"
+                  class="hover:opacity-50 transition-opacity"
+                  >Services</a
+                >
+                <a
+                  href="contact.html"
+                  class="hover:opacity-50 transition-opacity"
+                  >Contact</a
+                >
+              </nav>
+            </div>
+
+            <!-- Social -->
+            <div class="flex flex-col gap-6">
+              <span
+                class="text-[10px] font-semibold uppercase tracking-widest text-gray-500"
+                >Social</span
+              >
+
+              <!-- Mobile: Row of icons. Desktop: Column of icon+text -->
+              <div class="flex flex-col gap-4 md:gap-3">
+                <a
+                  href="#"
+                  aria-label="Instagram"
+                  class="flex items-center gap-3 hover:opacity-50 transition-all group"
+                >
+                  <span
+                    class="w-8 h-8 flex items-center justify-center border border-brand-dark/20 rounded-full group-hover:bg-brand-dark group-hover:text-brand-light transition-all"
+                  >
+                    <svg
+                      class="w-3.5 h-3.5"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"
+                      />
+                    </svg>
+                  </span>
+                  <span class="hidden md:block text-sm font-medium"
+                    >Instagram</span
+                  >
                 </a>
+                <a
+                  href="#"
+                  aria-label="Facebook"
+                  class="flex items-center gap-3 hover:opacity-50 transition-all group"
+                >
+                  <span
+                    class="w-8 h-8 flex items-center justify-center border border-brand-dark/20 rounded-full group-hover:bg-brand-dark group-hover:text-brand-light transition-all"
+                  >
+                    <svg
+                      class="w-3.5 h-3.5"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M22.675 0h-21.35C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"
+                      />
+                    </svg>
+                  </span>
+                  <span class="hidden md:block text-sm font-medium"
+                    >Facebook</span
+                  >
+                </a>
+                <a
+                  href="#"
+                  aria-label="YouTube"
+                  class="flex items-center gap-3 hover:opacity-50 transition-all group"
+                >
+                  <span
+                    class="w-8 h-8 flex items-center justify-center border border-brand-dark/20 rounded-full group-hover:bg-brand-dark group-hover:text-brand-light transition-all"
+                  >
+                    <svg
+                      class="w-4 h-4"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.5 12 3.5 12 3.5s-7.505 0-9.377.55a3.016 3.016 0 0 0-2.122 2.136C0 8.07 0 12 0 12s0 3.93.498 5.814a3.016 3.016 0 0 0 2.122 2.136C4.495 20.5 12 20.5 12 20.5s7.505 0 9.377-.55a3.016 3.016 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.498-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                      />
+                    </svg>
+                  </span>
+                  <span class="hidden md:block text-sm font-medium"
+                    >YouTube</span
+                  >
+                </a>
+                <a
+                  href="#"
+                  aria-label="LinkedIn"
+                  class="flex items-center gap-3 hover:opacity-50 transition-all group"
+                >
+                  <span
+                    class="w-8 h-8 flex items-center justify-center border border-brand-dark/20 rounded-full group-hover:bg-brand-dark group-hover:text-brand-light transition-all"
+                  >
+                    <svg
+                      class="w-3.5 h-3.5"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                      />
+                    </svg>
+                  </span>
+                  <span class="hidden md:block text-sm font-medium"
+                    >LinkedIn</span
+                  >
+                </a>
+              </div>
             </div>
-            <div class="flex flex-col items-start md:items-end gap-12">
-                <nav class="flex flex-wrap gap-6 text-[10px] font-semibold uppercase tracking-widest">
-                    <a href="index.html" class="hover:opacity-50 transition-opacity">Home <span class="text-gray-400 ml-1">01</span></a>
-                    <a href="portfolio.html" class="hover:opacity-50 transition-opacity">Portfolio <span class="text-gray-400 ml-1">02</span></a>
-                    <a href="about.html" class="hover:opacity-50 transition-opacity">About <span class="text-gray-400 ml-1">03</span></a>
-                    <a href="services.html" class="hover:opacity-50 transition-opacity">Services <span class="text-gray-400 ml-1">04</span></a>
-                    <a href="contact.html" class="hover:opacity-50 transition-opacity">Contact <span class="text-gray-400 ml-1">05</span></a>
-                </nav>
-                <div class="flex items-center gap-8 text-gray-500 text-[10px] font-semibold uppercase tracking-widest">
-                    <p>&copy; 2025 XEN-AI</p>
-                    <p>19'</p>
-                </div>
-            </div>
+          </div>
         </div>
+
+        <!-- Bottom Section -->
+        <div
+          class="flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] uppercase tracking-widest text-brand-dark w-full"
+        >
+          <p>
+            &copy; 2026 <strong>Xen AI Media</strong> All Right Reserved.
+            Developed by <strong>Xeventure</strong>
+          </p>
+          <a
+            href="tel:+919746905919"
+            class="font-semibold text-brand-dark hover:opacity-50 transition-opacity text-xs md:text-sm"
+            >+91 974 6905 919</a
+          >
+        </div>
+      </div>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/about.js"></script>
-</body>
+  </body>
 </html>
