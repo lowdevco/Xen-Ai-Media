@@ -45,12 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 lines[0].style.transform = 'translateY(3.5px) rotate(45deg)';
                 lines[1].style.transform = 'translateY(-3.5px) rotate(-45deg)';
                 
-                // Remove mix-blend so it doesn't invert over the dark overlay
-                if(header.classList.contains('mix-blend-difference')) {
-                    header.classList.remove('mix-blend-difference');
-                    header.dataset.blendRemoved = 'true';
-                }
-            } else {
+                            } else {
                 // Close menu
                 overlay.classList.remove('opacity-100', 'pointer-events-auto', 'translate-y-0');
                 overlay.classList.add('opacity-0', 'pointer-events-none', 'translate-y-[-10px]');
@@ -59,12 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 lines[0].style.transform = 'none';
                 lines[1].style.transform = 'none';
                 
-                // Restore mix-blend
-                if(header.dataset.blendRemoved === 'true') {
-                    header.classList.add('mix-blend-difference');
-                    header.dataset.blendRemoved = 'false';
-                }
-            }
+                            }
         });
     }
 });
